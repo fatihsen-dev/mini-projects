@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+@keyframes beep {
+  0%, 15%, 70%, 100% {
+    opacity: 0;
+  }
+  20%, 65% {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #222;
+  color: white;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 43%;
+  background: #222;
+  border-top: 2px solid #fff;
+  padding: 5px 0;
+}
+
+.keyboard > li {
+  width: calc(100% / 10);
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.keyboard > li > div {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard > li > div:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 57%;
+}
+
+.beep {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 15px white;
+  opacity: 0;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */

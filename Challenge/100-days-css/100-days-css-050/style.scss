@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  .egg {
+    width: 100px;
+    height: 130px;
+    background: #fff;
+    border-top-left-radius: 120px 200px;
+    border-top-right-radius: 120px 200px;
+    border-bottom-left-radius: 120px 120px;
+    border-bottom-right-radius: 120px 120px;
+    position: absolute;
+    transform-origin: 50% 80%;
+    top: -135px;
+    animation: eggAnimate 3s ease-in-out infinite;
+    @keyframes eggAnimate {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+      25% {
+        transform: translate(0, 280px) scale(1, 0.8);
+      }
+      30% {
+        transform: translate(0, 260px) scale(1, 1.05);
+      }
+      35% {
+        transform: translate(0, 270px) scale(1);
+      }
+      40%,
+      45% {
+        transform: translate(0, 270px) scale(1) rotate(0deg);
+      }
+      50% {
+        transform: translate(0, 270px) scale(1) rotate(5deg);
+      }
+      55% {
+        transform: translate(0, 270px) scale(1) rotate(-5deg);
+      }
+      60% {
+        transform: translate(0, 270px) scale(1) rotate(5deg);
+      }
+      65%,
+      70% {
+        transform: translate(0, 270px) scale(1) rotate(0deg);
+      }
+      75% {
+        transform: translate(0, 280px) scale(1, 0.8) rotate(0deg);
+      }
+      80% {
+        transform: translate(0, 260px) scale(1) rotate(0deg);
+      }
+      100% {
+        transform: translate(0, 550px) scale(1) rotate(0deg);
+      }
+    }
+  }
+}

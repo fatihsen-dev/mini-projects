@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #272C34;
+  position: relative;
+  border-radius: 3px;
+}
+
+.box .circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .circle::after, .box .circle::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.box .circle::before {
+  background: aqua;
+}
+
+.box .circle::after {
+  background: yellow;
+  transform: translate(0, 130px);
+}
+
+.box .circle .sun {
+  position: absolute;
+  width: 10px;
+  height: 220px;
+  background: transparent;
+  transform: translate(0, 36px) rotate(-90deg);
+  animation: sun-goes-down 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes sun-goes-down {
+  0% {
+    transform: translate(0, 36px) rotate(-90deg);
+  }
+  30%, 50% {
+    transform: translate(0, 36px) rotate(-30deg);
+  }
+  100% {
+    transform: translate(0, 36px) rotate(90deg);
+  }
+}
+
+.box .circle .sun::before {
+  content: '';
+  position: absolute;
+  background: yellow;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  top: -10px;
+}
+
+.box .circle .pyramid {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: translate(0, 30px) rotate(45deg);
+  background: #fff;
+  overflow: hidden;
+  animation: pyramid 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+.box .circle .pyramid::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  transform: translate(20px, -68px) rotate(-60deg);
+  animation: pyramidbefore 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+@keyframes pyramidbefore {
+  0% {
+    background: #bbb;
+  }
+  20%, 50% {
+    background: #fff;
+  }
+  90% {
+    background: #bbb;
+  }
+  100% {
+    background: #bbb;
+  }
+}
+
+@keyframes pyramid {
+  0% {
+    background: #fff;
+  }
+  20%, 50% {
+    background: #bbb;
+  }
+  90% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+.box .black {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+  animation: black 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+@keyframes black {
+  0% {
+    background: #272C34;
+  }
+  20%, 50% {
+    background: transparent;
+  }
+  90% {
+    background: #272C34;
+  }
+  100% {
+    background: #272C34;
+  }
+}
+/*# sourceMappingURL=style.css.map */

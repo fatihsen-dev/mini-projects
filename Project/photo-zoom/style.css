@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+input[type="radio"] {
+  display: none;
+}
+.container {
+  display: flex;
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+label {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.labels {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  color: #222;
+  font-weight: 500;
+}
+.labels > label::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  left: -26px;
+  top: 3px;
+}
+.labels > label::after {
+  content: "✔";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: deepskyblue;
+  border-radius: 1px;
+  left: -25px;
+  top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #ddd;
+  opacity: 0;
+  transition: 0.05s linear;
+}
+#radio1:checked ~ .container > .labels > label:nth-of-type(1)::after {
+  opacity: 1;
+}
+#radio2:checked ~ .container > .labels > label:nth-of-type(2)::after {
+  opacity: 1;
+}
+#radio3:checked ~ .container > .labels > label:nth-of-type(3)::after {
+  opacity: 1;
+}
+#radio4:checked ~ .container > .labels > label:nth-of-type(4)::after {
+  opacity: 1;
+}
+#radio5:checked ~ .container > .labels > label:nth-of-type(5)::after {
+  opacity: 1;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  background-image: url("./image.jpg");
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: 0.15s linear;
+}
+#radio2:checked ~ .container > .img {
+  background-position: 0% 50%;
+  background-size: 250% 250%;
+}
+#radio3:checked ~ .container > .img {
+  background-position: 60% 90%;
+  background-size: 150% 150%;
+}
+#radio4:checked ~ .container > .img {
+  background-position: 75% 0%;
+  background-size: 250% 250%;
+}
+#radio5:checked ~ .container > .img {
+  background-position: 95% 60%;
+  background-size: 270% 270%;
+}

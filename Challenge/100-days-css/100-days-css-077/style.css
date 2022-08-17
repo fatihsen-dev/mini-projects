@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+}
+
+.box .c {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 0 transparent;
+  background: #fff;
+}
+
+.box .c-0 {
+  opacity: 0;
+  animation: to 2s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+@keyframes to {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: 320px;
+  }
+}
+
+.box .c-1 {
+  opacity: 0.1;
+  animation: to 2s ease-in-out infinite;
+  animation-delay: -0.01351s;
+}
+
+@keyframes to {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: 320px;
+  }
+}
+
+.box .c-2 {
+  opacity: 0.2;
+  animation: to 2s ease-in-out infinite;
+  animation-delay: -0.02703s;
+}
+
+@keyframes to {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: 320px;
+  }
+}
+
+.box .c-3 {
+  opacity: 0.3;
+  animation: to 2s ease-in-out infinite;
+  animation-delay: -0.04054s;
+}
+
+@keyframes to {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: 320px;
+  }
+}
+
+.box .c-4 {
+  opacity: 0.4;
+  animation: to 2s ease-in-out infinite;
+  animation-delay: -0.05405s;
+}
+
+@keyframes to {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: 320px;
+  }
+}
+
+.box .c-5 {
+  opacity: 0.5;
+  animation: to 2s ease-in-out infinite;
+  animation-delay: -0.06757s;
+}
+
+@keyframes to {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: 320px;
+  }
+}
+
+.box .c-6 {
+  opacity: 0.6;
+  animation: to 2s ease-in-out infinite;
+  animation-delay: -0.08108s;
+}
+
+@keyframes to {
+  0%,
+  100% {
+    left: 20px;
+  }
+  50% {
+    left: 320px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+  z-index: 1;
+}
+
+.box .ellipse {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border: 3px solid #ffd700;
+}
+
+.box .ellipse.ellipse-1 {
+  animation: anmate-1 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-1 {
+  from {
+    transform: scale(1) rotate(5deg);
+  }
+  to {
+    transform: scale(-19) rotate(-5deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-2 {
+  animation: anmate-2 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-2 {
+  from {
+    transform: scale(1) rotate(10deg);
+  }
+  to {
+    transform: scale(-18) rotate(-10deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-3 {
+  animation: anmate-3 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-3 {
+  from {
+    transform: scale(1) rotate(15deg);
+  }
+  to {
+    transform: scale(-17) rotate(-15deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-4 {
+  animation: anmate-4 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-4 {
+  from {
+    transform: scale(1) rotate(20deg);
+  }
+  to {
+    transform: scale(-16) rotate(-20deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-5 {
+  animation: anmate-5 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-5 {
+  from {
+    transform: scale(1) rotate(25deg);
+  }
+  to {
+    transform: scale(-15) rotate(-25deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-6 {
+  animation: anmate-6 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-6 {
+  from {
+    transform: scale(1) rotate(30deg);
+  }
+  to {
+    transform: scale(-14) rotate(-30deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-7 {
+  animation: anmate-7 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-7 {
+  from {
+    transform: scale(1) rotate(35deg);
+  }
+  to {
+    transform: scale(-13) rotate(-35deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-8 {
+  animation: anmate-8 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-8 {
+  from {
+    transform: scale(1) rotate(40deg);
+  }
+  to {
+    transform: scale(-12) rotate(-40deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-9 {
+  animation: anmate-9 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-9 {
+  from {
+    transform: scale(1) rotate(45deg);
+  }
+  to {
+    transform: scale(-11) rotate(-45deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-10 {
+  animation: anmate-10 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-10 {
+  from {
+    transform: scale(1) rotate(50deg);
+  }
+  to {
+    transform: scale(-10) rotate(-50deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-11 {
+  animation: anmate-11 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-11 {
+  from {
+    transform: scale(1) rotate(55deg);
+  }
+  to {
+    transform: scale(-9) rotate(-55deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-12 {
+  animation: anmate-12 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-12 {
+  from {
+    transform: scale(1) rotate(60deg);
+  }
+  to {
+    transform: scale(-8) rotate(-60deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-13 {
+  animation: anmate-13 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-13 {
+  from {
+    transform: scale(1) rotate(65deg);
+  }
+  to {
+    transform: scale(-7) rotate(-65deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-14 {
+  animation: anmate-14 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-14 {
+  from {
+    transform: scale(1) rotate(70deg);
+  }
+  to {
+    transform: scale(-6) rotate(-70deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-15 {
+  animation: anmate-15 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-15 {
+  from {
+    transform: scale(1) rotate(75deg);
+  }
+  to {
+    transform: scale(-5) rotate(-75deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-16 {
+  animation: anmate-16 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-16 {
+  from {
+    transform: scale(1) rotate(80deg);
+  }
+  to {
+    transform: scale(-4) rotate(-80deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-17 {
+  animation: anmate-17 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-17 {
+  from {
+    transform: scale(1) rotate(85deg);
+  }
+  to {
+    transform: scale(-3) rotate(-85deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.box .ellipse.ellipse-18 {
+  animation: anmate-18 5s ease-in-out infinite alternate;
+}
+
+@keyframes anmate-18 {
+  from {
+    transform: scale(1) rotate(90deg);
+  }
+  to {
+    transform: scale(-2) rotate(-90deg);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+}
+
+.box .circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 2px dotted #fff;
+  position: absolute;
+  transform: translate(0, 0);
+}
+
+.box .circle-1 {
+  animation: circle 10s ease-in-out -0.1s infinite both;
+  z-index: 1;
+}
+
+.box .circle-2 {
+  animation: circle 10s ease-in-out -0.2s infinite both;
+  z-index: 2;
+}
+
+.box .circle-3 {
+  animation: circle 10s ease-in-out -0.3s infinite both;
+  z-index: 3;
+}
+
+.box .circle-4 {
+  animation: circle 10s ease-in-out -0.4s infinite both;
+  z-index: 4;
+}
+
+.box .circle-5 {
+  animation: circle 10s ease-in-out -0.5s infinite both;
+  z-index: 5;
+}
+
+.box .circle-6 {
+  animation: circle 10s ease-in-out -0.6s infinite both;
+  z-index: 6;
+}
+
+.box .circle-7 {
+  animation: circle 10s ease-in-out -0.7s infinite both;
+  z-index: 7;
+}
+
+.box .circle-8 {
+  animation: circle 10s ease-in-out -0.8s infinite both;
+  z-index: 8;
+}
+
+.box .circle-9 {
+  animation: circle 10s ease-in-out -0.9s infinite both;
+  z-index: 9;
+}
+
+.box .circle-10 {
+  animation: circle 10s ease-in-out -1s infinite both;
+  z-index: 10;
+}
+
+.box .circle-11 {
+  animation: circle 10s ease-in-out -1.1s infinite both;
+  z-index: 11;
+}
+
+.box .circle-12 {
+  animation: circle 10s ease-in-out -1.2s infinite both;
+  z-index: 12;
+}
+
+.box .circle-13 {
+  animation: circle 10s ease-in-out -1.3s infinite both;
+  z-index: 13;
+}
+
+.box .circle-14 {
+  animation: circle 10s ease-in-out -1.4s infinite both;
+  z-index: 14;
+}
+
+.box .circle-15 {
+  animation: circle 10s ease-in-out -1.5s infinite both;
+  z-index: 15;
+}
+
+.box .circle-16 {
+  animation: circle 10s ease-in-out -1.6s infinite both;
+  z-index: 16;
+}
+
+.box .circle-17 {
+  animation: circle 10s ease-in-out -1.7s infinite both;
+  z-index: 17;
+}
+
+.box .circle-18 {
+  animation: circle 10s ease-in-out -1.8s infinite both;
+  z-index: 18;
+}
+
+.box .circle-19 {
+  animation: circle 10s ease-in-out -1.9s infinite both;
+  z-index: 19;
+}
+
+.box .circle-20 {
+  animation: circle 10s ease-in-out -2s infinite both;
+  z-index: 20;
+}
+
+.box .circle-21 {
+  animation: circle 10s ease-in-out -2.1s infinite both;
+  z-index: 21;
+}
+
+.box .circle-22 {
+  animation: circle 10s ease-in-out -2.2s infinite both;
+  z-index: 22;
+}
+
+.box .circle-23 {
+  animation: circle 10s ease-in-out -2.3s infinite both;
+  z-index: 23;
+}
+
+.box .circle-24 {
+  animation: circle 10s ease-in-out -2.4s infinite both;
+  z-index: 24;
+}
+
+.box .circle-25 {
+  animation: circle 10s ease-in-out -2.5s infinite both;
+  z-index: 25;
+}
+
+.box .circle-26 {
+  animation: circle 10s ease-in-out -2.6s infinite both;
+  z-index: 26;
+}
+
+.box .circle-27 {
+  animation: circle 10s ease-in-out -2.7s infinite both;
+  z-index: 27;
+}
+
+.box .circle-28 {
+  animation: circle 10s ease-in-out -2.8s infinite both;
+  z-index: 28;
+}
+
+.box .circle-29 {
+  animation: circle 10s ease-in-out -2.9s infinite both;
+  z-index: 29;
+}
+
+.box .circle-30 {
+  animation: circle 10s ease-in-out -3s infinite both;
+  z-index: 30;
+}
+
+.box .circle-31 {
+  animation: circle 10s ease-in-out -3.1s infinite both;
+  z-index: 31;
+}
+
+.box .circle-32 {
+  animation: circle 10s ease-in-out -3.2s infinite both;
+  z-index: 32;
+}
+
+.box .circle-33 {
+  animation: circle 10s ease-in-out -3.3s infinite both;
+  z-index: 33;
+}
+
+.box .circle-34 {
+  animation: circle 10s ease-in-out -3.4s infinite both;
+  z-index: 34;
+}
+
+.box .circle-35 {
+  animation: circle 10s ease-in-out -3.5s infinite both;
+  z-index: 35;
+}
+
+.box .circle-36 {
+  animation: circle 10s ease-in-out -3.6s infinite both;
+  z-index: 36;
+}
+
+.box .circle-37 {
+  animation: circle 10s ease-in-out -3.7s infinite both;
+  z-index: 37;
+}
+
+.box .circle-38 {
+  animation: circle 10s ease-in-out -3.8s infinite both;
+  z-index: 38;
+}
+
+.box .circle-39 {
+  animation: circle 10s ease-in-out -3.9s infinite both;
+  z-index: 39;
+}
+
+.box .circle-40 {
+  animation: circle 10s ease-in-out -4s infinite both;
+  z-index: 40;
+}
+
+.box .circle-41 {
+  animation: circle 10s ease-in-out -4.1s infinite both;
+  z-index: 41;
+}
+
+.box .circle-42 {
+  animation: circle 10s ease-in-out -4.2s infinite both;
+  z-index: 42;
+}
+
+.box .circle-43 {
+  animation: circle 10s ease-in-out -4.3s infinite both;
+  z-index: 43;
+}
+
+.box .circle-44 {
+  animation: circle 10s ease-in-out -4.4s infinite both;
+  z-index: 44;
+}
+
+.box .circle-45 {
+  animation: circle 10s ease-in-out -4.5s infinite both;
+  z-index: 45;
+}
+
+.box .circle-46 {
+  animation: circle 10s ease-in-out -4.6s infinite both;
+  z-index: 46;
+}
+
+.box .circle-47 {
+  animation: circle 10s ease-in-out -4.7s infinite both;
+  z-index: 47;
+}
+
+.box .circle-48 {
+  animation: circle 10s ease-in-out -4.8s infinite both;
+  z-index: 48;
+}
+
+.box .circle-49 {
+  animation: circle 10s ease-in-out -4.9s infinite both;
+  z-index: 49;
+}
+
+.box .circle-50 {
+  animation: circle 10s ease-in-out -5s infinite both;
+  z-index: 50;
+}
+
+.box .circle-51 {
+  animation: circle 10s ease-in-out -5.1s infinite both;
+  z-index: 51;
+}
+
+.box .circle-52 {
+  animation: circle 10s ease-in-out -5.2s infinite both;
+  z-index: 52;
+}
+
+.box .circle-53 {
+  animation: circle 10s ease-in-out -5.3s infinite both;
+  z-index: 53;
+}
+
+.box .circle-54 {
+  animation: circle 10s ease-in-out -5.4s infinite both;
+  z-index: 54;
+}
+
+.box .circle-55 {
+  animation: circle 10s ease-in-out -5.5s infinite both;
+  z-index: 55;
+}
+
+.box .circle-56 {
+  animation: circle 10s ease-in-out -5.6s infinite both;
+  z-index: 56;
+}
+
+.box .circle-57 {
+  animation: circle 10s ease-in-out -5.7s infinite both;
+  z-index: 57;
+}
+
+.box .circle-58 {
+  animation: circle 10s ease-in-out -5.8s infinite both;
+  z-index: 58;
+}
+
+.box .circle-59 {
+  animation: circle 10s ease-in-out -5.9s infinite both;
+  z-index: 59;
+}
+
+.box .circle-60 {
+  animation: circle 10s ease-in-out -6s infinite both;
+  z-index: 60;
+}
+
+.box .circle-61 {
+  animation: circle 10s ease-in-out -6.1s infinite both;
+  z-index: 61;
+}
+
+.box .circle-62 {
+  animation: circle 10s ease-in-out -6.2s infinite both;
+  z-index: 62;
+}
+
+.box .circle-63 {
+  animation: circle 10s ease-in-out -6.3s infinite both;
+  z-index: 63;
+}
+
+.box .circle-64 {
+  animation: circle 10s ease-in-out -6.4s infinite both;
+  z-index: 64;
+}
+
+.box .circle-65 {
+  animation: circle 10s ease-in-out -6.5s infinite both;
+  z-index: 65;
+}
+
+.box .circle-66 {
+  animation: circle 10s ease-in-out -6.6s infinite both;
+  z-index: 66;
+}
+
+.box .circle-67 {
+  animation: circle 10s ease-in-out -6.7s infinite both;
+  z-index: 67;
+}
+
+.box .circle-68 {
+  animation: circle 10s ease-in-out -6.8s infinite both;
+  z-index: 68;
+}
+
+.box .circle-69 {
+  animation: circle 10s ease-in-out -6.9s infinite both;
+  z-index: 69;
+}
+
+.box .circle-70 {
+  animation: circle 10s ease-in-out -7s infinite both;
+  z-index: 70;
+}
+
+.box .circle-71 {
+  animation: circle 10s ease-in-out -7.1s infinite both;
+  z-index: 71;
+}
+
+.box .circle-72 {
+  animation: circle 10s ease-in-out -7.2s infinite both;
+  z-index: 72;
+}
+
+.box .circle-73 {
+  animation: circle 10s ease-in-out -7.3s infinite both;
+  z-index: 73;
+}
+
+.box .circle-74 {
+  animation: circle 10s ease-in-out -7.4s infinite both;
+  z-index: 74;
+}
+
+.box .circle-75 {
+  animation: circle 10s ease-in-out -7.5s infinite both;
+  z-index: 75;
+}
+
+.box .circle-76 {
+  animation: circle 10s ease-in-out -7.6s infinite both;
+  z-index: 76;
+}
+
+.box .circle-77 {
+  animation: circle 10s ease-in-out -7.7s infinite both;
+  z-index: 77;
+}
+
+.box .circle-78 {
+  animation: circle 10s ease-in-out -7.8s infinite both;
+  z-index: 78;
+}
+
+.box .circle-79 {
+  animation: circle 10s ease-in-out -7.9s infinite both;
+  z-index: 79;
+}
+
+.box .circle-80 {
+  animation: circle 10s ease-in-out -8s infinite both;
+  z-index: 80;
+}
+
+.box .circle-81 {
+  animation: circle 10s ease-in-out -8.1s infinite both;
+  z-index: 81;
+}
+
+.box .circle-82 {
+  animation: circle 10s ease-in-out -8.2s infinite both;
+  z-index: 82;
+}
+
+.box .circle-83 {
+  animation: circle 10s ease-in-out -8.3s infinite both;
+  z-index: 83;
+}
+
+.box .circle-84 {
+  animation: circle 10s ease-in-out -8.4s infinite both;
+  z-index: 84;
+}
+
+.box .circle-85 {
+  animation: circle 10s ease-in-out -8.5s infinite both;
+  z-index: 85;
+}
+
+.box .circle-86 {
+  animation: circle 10s ease-in-out -8.6s infinite both;
+  z-index: 86;
+}
+
+.box .circle-87 {
+  animation: circle 10s ease-in-out -8.7s infinite both;
+  z-index: 87;
+}
+
+.box .circle-88 {
+  animation: circle 10s ease-in-out -8.8s infinite both;
+  z-index: 88;
+}
+
+.box .circle-89 {
+  animation: circle 10s ease-in-out -8.9s infinite both;
+  z-index: 89;
+}
+
+.box .circle-90 {
+  animation: circle 10s ease-in-out -9s infinite both;
+  z-index: 90;
+}
+
+.box .circle-91 {
+  animation: circle 10s ease-in-out -9.1s infinite both;
+  z-index: 91;
+}
+
+.box .circle-92 {
+  animation: circle 10s ease-in-out -9.2s infinite both;
+  z-index: 92;
+}
+
+.box .circle-93 {
+  animation: circle 10s ease-in-out -9.3s infinite both;
+  z-index: 93;
+}
+
+.box .circle-94 {
+  animation: circle 10s ease-in-out -9.4s infinite both;
+  z-index: 94;
+}
+
+.box .circle-95 {
+  animation: circle 10s ease-in-out -9.5s infinite both;
+  z-index: 95;
+}
+
+.box .circle-96 {
+  animation: circle 10s ease-in-out -9.6s infinite both;
+  z-index: 96;
+}
+
+.box .circle-97 {
+  animation: circle 10s ease-in-out -9.7s infinite both;
+  z-index: 97;
+}
+
+.box .circle-98 {
+  animation: circle 10s ease-in-out -9.8s infinite both;
+  z-index: 98;
+}
+
+.box .circle-99 {
+  animation: circle 10s ease-in-out -9.9s infinite both;
+  z-index: 99;
+}
+
+.box .circle-100 {
+  animation: circle 10s ease-in-out -10s infinite both;
+  z-index: 100;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    border-color: red;
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(3) translate(0, 0);
+    border-color: blue;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

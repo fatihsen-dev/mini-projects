@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.box .ee,
+.box .nn,
+.box .dd {
+  width: 105px;
+  height: 170px;
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .ee {
+  background: transparent;
+}
+
+.box .ee .l {
+  height: 90%;
+  width: 7px;
+  border-radius: 7px;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px #1a1a1a;
+  position: relative;
+}
+
+.box .ee .l::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px #505050;
+  inset: 0;
+  animation: animate 10s linear infinite 0.5s;
+}
+
+.box .ee .d {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.box .ee .d .t,
+.box .ee .d .m,
+.box .ee .d .b {
+  width: 80px;
+  height: 7px;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px #1a1a1a;
+  border-radius: 7px;
+  position: relative;
+}
+
+.box .ee .d .t::after,
+.box .ee .d .m::after,
+.box .ee .d .b::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.9);
+  inset: 0;
+  box-shadow: 0 0 10px #505050;
+}
+
+.box .ee .d .t::after {
+  animation: animate 10s linear infinite 0.3s;
+}
+
+.box .ee .d .m {
+  width: 60px;
+}
+
+.box .ee .d .m::after {
+  animation: animate 10s linear infinite;
+}
+
+.box .ee .d .b::after {
+  animation: animate 10s linear infinite 0.1s;
+}
+
+.box .nn {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.box .nn .l,
+.box .nn .m,
+.box .nn .r {
+  width: 7px;
+  height: 90%;
+  border-radius: 7px;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px #1a1a1a;
+  position: relative;
+}
+
+.box .nn .l::after,
+.box .nn .m::after,
+.box .nn .r::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.9);
+  inset: 0;
+  box-shadow: 0 0 10px #505050;
+  animation: animate 10s linear infinite;
+}
+
+.box .nn .m {
+  height: 100%;
+  transform: rotate(-26deg);
+}
+
+.box .nn .m::after {
+  animation: animate 10s linear infinite 0.6s;
+}
+
+.box .nn .l::after {
+  animation: animate 10s linear infinite 0.3s;
+}
+
+.box .nn .r::after {
+  animation: animate 10s linear infinite 0.1s;
+}
+
+.box .dd .l {
+  height: 90%;
+  width: 7px;
+  border-radius: 7px;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px #1a1a1a;
+  position: absolute;
+  left: 4px;
+}
+
+.box .dd .l::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.9);
+  inset: 0;
+  box-shadow: 0 0 10px #505050;
+  animation: animate 10s linear infinite 0.7s;
+}
+
+.box .dd .line {
+  height: 90%;
+  width: 7px;
+  border-radius: 7px;
+  position: absolute;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box .dd .line .d {
+  width: 7px;
+  height: 7px;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px #1a1a1a;
+  border-radius: 100%;
+  position: relative;
+}
+
+.box .dd .line .d::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px #505050;
+  inset: 0;
+  animation: animate 10s linear infinite 0.6s;
+}
+
+.box .dd .r {
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box .dd .r .e {
+  width: 153px;
+  height: 153px;
+  background: transparent;
+  border: 7px solid #1a1a1a;
+  box-shadow: 0 0 10px #1a1a1a, inset 0 0 10px #1a1a1a;
+  position: absolute;
+  right: 4px;
+  border-radius: 100%;
+}
+
+.box .dd .r .e::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 7px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px #505050, inset 0 0 10px #505050;
+  position: absolute;
+  border-radius: 100%;
+  transform: translate(-7px, -7px);
+  animation: animate 10s linear infinite 0.6s;
+}
+
+@keyframes animate {
+  35%,
+  37%,
+  39%,
+  41%,
+  100% {
+    opacity: 1;
+  }
+  0%,
+  34%,
+  36%,
+  36%,
+  38%,
+  40% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

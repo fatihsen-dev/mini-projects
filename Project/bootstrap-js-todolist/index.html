@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo List</title>
+  </head>
+  <body class="p-4">
+    <div id="container"
+      class="container position-relative justify-content-start d-flex flex-column gap-2 bg-dark p-4 text-white"
+    >
+      <h1 class="mb-4 d-flex align-items-center justify-content-between">
+        Todo List
+      </h1>
+      <div id="popup" class="popup gap-2 p-5 d-none flex-column justify-content-center align-items-center fixed-top position-absolute w-100 h-100">
+        <input id="editText" class="form-control fs-5 rounded-1 fw-semibold input-text" type="text" placeholder="Add Note">
+        <button type="button" id="editBtn2" class="btn rounded-1 btn-primary w-100">
+          Edit
+      </div>
+      <div class="add-items-container mb-3 d-flex">
+        <input id="inputText" class="form-control fs-5 fw-semibold input-text" type="text" placeholder="Add Note">
+        <button type="button" id="addBtn" class="btn btn-primary">
+          <i class="bi bi-plus-circle"></i>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

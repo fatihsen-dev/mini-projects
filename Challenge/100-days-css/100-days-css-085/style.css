@@ -1,0 +1,2680 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.box .i {
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.box .i.i-0 {
+  animation: animate 0.3s linear infinite alternate 0s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-1 {
+  animation: animate 0.3s linear infinite alternate 0.02s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-2 {
+  animation: animate 0.3s linear infinite alternate 0.04s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-3 {
+  animation: animate 0.3s linear infinite alternate 0.06s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-4 {
+  animation: animate 0.3s linear infinite alternate 0.08s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-5 {
+  animation: animate 0.3s linear infinite alternate 0.1s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-6 {
+  animation: animate 0.3s linear infinite alternate 0.12s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-7 {
+  animation: animate 0.3s linear infinite alternate 0.14s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-8 {
+  animation: animate 0.3s linear infinite alternate 0.16s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-9 {
+  animation: animate 0.3s linear infinite alternate 0.18s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-10 {
+  animation: animate 0.3s linear infinite alternate 0.2s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-11 {
+  animation: animate 0.3s linear infinite alternate 0.22s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-12 {
+  animation: animate 0.3s linear infinite alternate 0.24s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-13 {
+  animation: animate 0.3s linear infinite alternate 0.26s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-14 {
+  animation: animate 0.3s linear infinite alternate 0.28s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-15 {
+  animation: animate 0.3s linear infinite alternate 0.3s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-16 {
+  animation: animate 0.3s linear infinite alternate 0.32s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-17 {
+  animation: animate 0.3s linear infinite alternate 0.34s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-18 {
+  animation: animate 0.3s linear infinite alternate 0.36s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-19 {
+  animation: animate 0.3s linear infinite alternate 0.38s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-20 {
+  animation: animate 0.3s linear infinite alternate 0.4s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-21 {
+  animation: animate 0.3s linear infinite alternate 0.42s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-22 {
+  animation: animate 0.3s linear infinite alternate 0.44s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-23 {
+  animation: animate 0.3s linear infinite alternate 0.46s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-24 {
+  animation: animate 0.3s linear infinite alternate 0.48s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-25 {
+  animation: animate 0.3s linear infinite alternate 0.5s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-26 {
+  animation: animate 0.3s linear infinite alternate 0.52s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-27 {
+  animation: animate 0.3s linear infinite alternate 0.54s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-28 {
+  animation: animate 0.3s linear infinite alternate 0.56s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-29 {
+  animation: animate 0.3s linear infinite alternate 0.58s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-30 {
+  animation: animate 0.3s linear infinite alternate 0.6s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-31 {
+  animation: animate 0.3s linear infinite alternate 0.62s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-32 {
+  animation: animate 0.3s linear infinite alternate 0.64s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-33 {
+  animation: animate 0.3s linear infinite alternate 0.66s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-34 {
+  animation: animate 0.3s linear infinite alternate 0.68s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-35 {
+  animation: animate 0.3s linear infinite alternate 0.7s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-36 {
+  animation: animate 0.3s linear infinite alternate 0.72s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-37 {
+  animation: animate 0.3s linear infinite alternate 0.74s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-38 {
+  animation: animate 0.3s linear infinite alternate 0.76s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-39 {
+  animation: animate 0.3s linear infinite alternate 0.78s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-40 {
+  animation: animate 0.3s linear infinite alternate 0.8s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-41 {
+  animation: animate 0.3s linear infinite alternate 0.82s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-42 {
+  animation: animate 0.3s linear infinite alternate 0.84s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-43 {
+  animation: animate 0.3s linear infinite alternate 0.86s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-44 {
+  animation: animate 0.3s linear infinite alternate 0.88s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-45 {
+  animation: animate 0.3s linear infinite alternate 0.9s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-46 {
+  animation: animate 0.3s linear infinite alternate 0.92s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-47 {
+  animation: animate 0.3s linear infinite alternate 0.94s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-48 {
+  animation: animate 0.3s linear infinite alternate 0.96s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-49 {
+  animation: animate 0.3s linear infinite alternate 0.98s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-50 {
+  animation: animate 0.3s linear infinite alternate 1s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-51 {
+  animation: animate 0.3s linear infinite alternate 1.02s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-52 {
+  animation: animate 0.3s linear infinite alternate 1.04s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-53 {
+  animation: animate 0.3s linear infinite alternate 1.06s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-54 {
+  animation: animate 0.3s linear infinite alternate 1.08s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-55 {
+  animation: animate 0.3s linear infinite alternate 1.1s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-56 {
+  animation: animate 0.3s linear infinite alternate 1.12s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-57 {
+  animation: animate 0.3s linear infinite alternate 1.14s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-58 {
+  animation: animate 0.3s linear infinite alternate 1.16s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-59 {
+  animation: animate 0.3s linear infinite alternate 1.18s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-60 {
+  animation: animate 0.3s linear infinite alternate 1.2s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-61 {
+  animation: animate 0.3s linear infinite alternate 1.22s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-62 {
+  animation: animate 0.3s linear infinite alternate 1.24s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-63 {
+  animation: animate 0.3s linear infinite alternate 1.26s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-64 {
+  animation: animate 0.3s linear infinite alternate 1.28s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-65 {
+  animation: animate 0.3s linear infinite alternate 1.3s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-66 {
+  animation: animate 0.3s linear infinite alternate 1.32s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-67 {
+  animation: animate 0.3s linear infinite alternate 1.34s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-68 {
+  animation: animate 0.3s linear infinite alternate 1.36s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-69 {
+  animation: animate 0.3s linear infinite alternate 1.38s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-70 {
+  animation: animate 0.3s linear infinite alternate 1.4s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-71 {
+  animation: animate 0.3s linear infinite alternate 1.42s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-72 {
+  animation: animate 0.3s linear infinite alternate 1.44s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-73 {
+  animation: animate 0.3s linear infinite alternate 1.46s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-74 {
+  animation: animate 0.3s linear infinite alternate 1.48s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-75 {
+  animation: animate 0.3s linear infinite alternate 1.5s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-76 {
+  animation: animate 0.3s linear infinite alternate 1.52s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-77 {
+  animation: animate 0.3s linear infinite alternate 1.54s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-78 {
+  animation: animate 0.3s linear infinite alternate 1.56s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-79 {
+  animation: animate 0.3s linear infinite alternate 1.58s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-80 {
+  animation: animate 0.3s linear infinite alternate 1.6s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-81 {
+  animation: animate 0.3s linear infinite alternate 1.62s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-82 {
+  animation: animate 0.3s linear infinite alternate 1.64s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-83 {
+  animation: animate 0.3s linear infinite alternate 1.66s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-84 {
+  animation: animate 0.3s linear infinite alternate 1.68s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-85 {
+  animation: animate 0.3s linear infinite alternate 1.7s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-86 {
+  animation: animate 0.3s linear infinite alternate 1.72s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-87 {
+  animation: animate 0.3s linear infinite alternate 1.74s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-88 {
+  animation: animate 0.3s linear infinite alternate 1.76s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-89 {
+  animation: animate 0.3s linear infinite alternate 1.78s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-90 {
+  animation: animate 0.3s linear infinite alternate 1.8s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-91 {
+  animation: animate 0.3s linear infinite alternate 1.82s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-92 {
+  animation: animate 0.3s linear infinite alternate 1.84s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-93 {
+  animation: animate 0.3s linear infinite alternate 1.86s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-94 {
+  animation: animate 0.3s linear infinite alternate 1.88s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-95 {
+  animation: animate 0.3s linear infinite alternate 1.9s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-96 {
+  animation: animate 0.3s linear infinite alternate 1.92s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-97 {
+  animation: animate 0.3s linear infinite alternate 1.94s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-98 {
+  animation: animate 0.3s linear infinite alternate 1.96s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-99 {
+  animation: animate 0.3s linear infinite alternate 1.98s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-100 {
+  animation: animate 0.3s linear infinite alternate 2s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-101 {
+  animation: animate 0.3s linear infinite alternate 2.02s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-102 {
+  animation: animate 0.3s linear infinite alternate 2.04s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-103 {
+  animation: animate 0.3s linear infinite alternate 2.06s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-104 {
+  animation: animate 0.3s linear infinite alternate 2.08s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-105 {
+  animation: animate 0.3s linear infinite alternate 2.1s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-106 {
+  animation: animate 0.3s linear infinite alternate 2.12s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-107 {
+  animation: animate 0.3s linear infinite alternate 2.14s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-108 {
+  animation: animate 0.3s linear infinite alternate 2.16s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-109 {
+  animation: animate 0.3s linear infinite alternate 2.18s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-110 {
+  animation: animate 0.3s linear infinite alternate 2.2s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-111 {
+  animation: animate 0.3s linear infinite alternate 2.22s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-112 {
+  animation: animate 0.3s linear infinite alternate 2.24s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-113 {
+  animation: animate 0.3s linear infinite alternate 2.26s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-114 {
+  animation: animate 0.3s linear infinite alternate 2.28s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-115 {
+  animation: animate 0.3s linear infinite alternate 2.3s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-116 {
+  animation: animate 0.3s linear infinite alternate 2.32s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-117 {
+  animation: animate 0.3s linear infinite alternate 2.34s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-118 {
+  animation: animate 0.3s linear infinite alternate 2.36s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-119 {
+  animation: animate 0.3s linear infinite alternate 2.38s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-120 {
+  animation: animate 0.3s linear infinite alternate 2.4s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-121 {
+  animation: animate 0.3s linear infinite alternate 2.42s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-122 {
+  animation: animate 0.3s linear infinite alternate 2.44s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-123 {
+  animation: animate 0.3s linear infinite alternate 2.46s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-124 {
+  animation: animate 0.3s linear infinite alternate 2.48s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-125 {
+  animation: animate 0.3s linear infinite alternate 2.5s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-126 {
+  animation: animate 0.3s linear infinite alternate 2.52s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-127 {
+  animation: animate 0.3s linear infinite alternate 2.54s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-128 {
+  animation: animate 0.3s linear infinite alternate 2.56s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-129 {
+  animation: animate 0.3s linear infinite alternate 2.58s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-130 {
+  animation: animate 0.3s linear infinite alternate 2.6s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-131 {
+  animation: animate 0.3s linear infinite alternate 2.62s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-132 {
+  animation: animate 0.3s linear infinite alternate 2.64s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-133 {
+  animation: animate 0.3s linear infinite alternate 2.66s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-134 {
+  animation: animate 0.3s linear infinite alternate 2.68s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-135 {
+  animation: animate 0.3s linear infinite alternate 2.7s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-136 {
+  animation: animate 0.3s linear infinite alternate 2.72s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-137 {
+  animation: animate 0.3s linear infinite alternate 2.74s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-138 {
+  animation: animate 0.3s linear infinite alternate 2.76s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-139 {
+  animation: animate 0.3s linear infinite alternate 2.78s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-140 {
+  animation: animate 0.3s linear infinite alternate 2.8s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-141 {
+  animation: animate 0.3s linear infinite alternate 2.82s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-142 {
+  animation: animate 0.3s linear infinite alternate 2.84s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-143 {
+  animation: animate 0.3s linear infinite alternate 2.86s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-144 {
+  animation: animate 0.3s linear infinite alternate 2.88s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-145 {
+  animation: animate 0.3s linear infinite alternate 2.9s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-146 {
+  animation: animate 0.3s linear infinite alternate 2.92s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-147 {
+  animation: animate 0.3s linear infinite alternate 2.94s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-148 {
+  animation: animate 0.3s linear infinite alternate 2.96s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-149 {
+  animation: animate 0.3s linear infinite alternate 2.98s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-150 {
+  animation: animate 0.3s linear infinite alternate 3s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-151 {
+  animation: animate 0.3s linear infinite alternate 3.02s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-152 {
+  animation: animate 0.3s linear infinite alternate 3.04s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-153 {
+  animation: animate 0.3s linear infinite alternate 3.06s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-154 {
+  animation: animate 0.3s linear infinite alternate 3.08s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-155 {
+  animation: animate 0.3s linear infinite alternate 3.1s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-156 {
+  animation: animate 0.3s linear infinite alternate 3.12s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-157 {
+  animation: animate 0.3s linear infinite alternate 3.14s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-158 {
+  animation: animate 0.3s linear infinite alternate 3.16s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-159 {
+  animation: animate 0.3s linear infinite alternate 3.18s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-160 {
+  animation: animate 0.3s linear infinite alternate 3.2s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-161 {
+  animation: animate 0.3s linear infinite alternate 3.22s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-162 {
+  animation: animate 0.3s linear infinite alternate 3.24s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-163 {
+  animation: animate 0.3s linear infinite alternate 3.26s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-164 {
+  animation: animate 0.3s linear infinite alternate 3.28s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-165 {
+  animation: animate 0.3s linear infinite alternate 3.3s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-166 {
+  animation: animate 0.3s linear infinite alternate 3.32s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-167 {
+  animation: animate 0.3s linear infinite alternate 3.34s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-168 {
+  animation: animate 0.3s linear infinite alternate 3.36s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-169 {
+  animation: animate 0.3s linear infinite alternate 3.38s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-170 {
+  animation: animate 0.3s linear infinite alternate 3.4s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-171 {
+  animation: animate 0.3s linear infinite alternate 3.42s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-172 {
+  animation: animate 0.3s linear infinite alternate 3.44s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-173 {
+  animation: animate 0.3s linear infinite alternate 3.46s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-174 {
+  animation: animate 0.3s linear infinite alternate 3.48s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-175 {
+  animation: animate 0.3s linear infinite alternate 3.5s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-176 {
+  animation: animate 0.3s linear infinite alternate 3.52s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-177 {
+  animation: animate 0.3s linear infinite alternate 3.54s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-178 {
+  animation: animate 0.3s linear infinite alternate 3.56s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-179 {
+  animation: animate 0.3s linear infinite alternate 3.58s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-180 {
+  animation: animate 0.3s linear infinite alternate 3.6s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-181 {
+  animation: animate 0.3s linear infinite alternate 3.62s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-182 {
+  animation: animate 0.3s linear infinite alternate 3.64s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-183 {
+  animation: animate 0.3s linear infinite alternate 3.66s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-184 {
+  animation: animate 0.3s linear infinite alternate 3.68s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-185 {
+  animation: animate 0.3s linear infinite alternate 3.7s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-186 {
+  animation: animate 0.3s linear infinite alternate 3.72s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-187 {
+  animation: animate 0.3s linear infinite alternate 3.74s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-188 {
+  animation: animate 0.3s linear infinite alternate 3.76s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-189 {
+  animation: animate 0.3s linear infinite alternate 3.78s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-190 {
+  animation: animate 0.3s linear infinite alternate 3.8s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-191 {
+  animation: animate 0.3s linear infinite alternate 3.82s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-192 {
+  animation: animate 0.3s linear infinite alternate 3.84s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-193 {
+  animation: animate 0.3s linear infinite alternate 3.86s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-194 {
+  animation: animate 0.3s linear infinite alternate 3.88s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-195 {
+  animation: animate 0.3s linear infinite alternate 3.9s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-196 {
+  animation: animate 0.3s linear infinite alternate 3.92s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-197 {
+  animation: animate 0.3s linear infinite alternate 3.94s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-198 {
+  animation: animate 0.3s linear infinite alternate 3.96s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-199 {
+  animation: animate 0.3s linear infinite alternate 3.98s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i.i-200 {
+  animation: animate 0.3s linear infinite alternate 4s;
+  background: #fff;
+  border-radius: 100%;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.box .i::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  background: #fff;
+  top: -30px;
+}
+
+.box .i::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  background: #fff;
+  top: 30px;
+}
+/*# sourceMappingURL=style.css.map */

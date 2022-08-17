@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 80px 0;
+
+  .c {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: transparent;
+    position: relative;
+    left: 10px;
+    animation: animateC 3s linear infinite;
+
+    @keyframes animateC {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .i {
+      width: 20px;
+      height: 20px;
+      //background: rgba(255, 0, 0, 0.1);
+      position: absolute;
+      transform-origin: 0 50%;
+      left: 10px;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 14px;
+        background: yellow;
+        right: 0;
+        animation: animateI 4s ease-in-out infinite alternate;
+      }
+      @keyframes animateI {
+        0% {
+          transform: scale(1) translate(0px, 0) scaleX(1);
+        }
+        25% {
+          transform: scale(1) translate(100px, 0) scaleX(6);
+          border-radius: 100%;
+        }
+        50% {
+          transform: scale(1) translate(-10px, 0) scaleX(10) scaleY(1);
+          border-radius: 0;
+        }
+        75% {
+          transform: scale(1) translate(100px, 0px) scaleX(2) scaleY(5.5);
+          border-radius: 0;
+        }
+        100% {
+          transform: scale(1) translate(100px, 0px) scaleX(2) scaleY(40);
+          border-radius: 0;
+        }
+      }
+    }
+    @for $i from 0 through 10 {
+      .i-#{$i} {
+        transform: rotate(($i * 36) + deg);
+      }
+    }
+  }
+}

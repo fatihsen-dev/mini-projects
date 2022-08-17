@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+  z-index: 1;
+}
+
+.box .button {
+  padding: 18px 40px;
+  background: gold;
+  border-radius: 2px;
+  font-size: 20px;
+  user-select: none;
+  cursor: pointer;
+  color: #222;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.box .button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: -1;
+  border-radius: 2px;
+  transform: translate(10px, 10px);
+  transition: 0.2s ease-in-out;
+}
+
+.box .button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: -1;
+  border-radius: 2px;
+  transition: 0.2s ease-in-out;
+}
+
+.box .button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.box .button:hover::after {
+  transform: translate(-10px, -10px);
+  background: gold;
+}
+
+.box .button:hover::before {
+  transform: translate(0, 0);
+}
+/*# sourceMappingURL=style.css.map */

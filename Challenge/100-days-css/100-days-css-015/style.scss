@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300,300italic);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+  height: 100%;
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  @include flex();
+  background: #222;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  @include flex();
+  background: linear-gradient(to left bottom, #3a92af, #5ca05a);
+  border-radius: 3px;
+
+  .container {
+    background: #fff;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    flex-direction: column;
+    padding: 14px;
+    overflow: hidden;
+    h4 {
+      color: #aaa;
+    }
+    .line {
+      width: 300px;
+      height: 3px;
+      background: #6ece3b;
+      transform: translate(-100%, -14px);
+      transition: 2.5s linear;
+    }
+    & > label:nth-last-of-type(1) {
+      width: 100px;
+      height: 80px;
+      border: 1px dashed #999;
+      position: relative;
+      border-radius: 3px;
+      transform: translate(0, -16px);
+      .input {
+        padding: 30px 4px;
+        color: transparent;
+        width: 100%;
+      }
+      .input::-webkit-file-upload-button {
+        display: none;
+      }
+      img {
+        width: 60px;
+        position: absolute;
+        transform: translate(-76px, 20px);
+      }
+      #circle {
+        width: 40px;
+        transform: translate(-68px, 20px) rotate(0);
+        opacity: 0;
+
+        @keyframes cirlce {
+          0% {
+            transform: translate(-68px, 20px) rotate(0);
+            opacity: 1;
+          }
+          99% {
+            transform: translate(-68px, 20px) rotate(360deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(-68px, 20px) rotate(360deg);
+            opacity: 0;
+          }
+        }
+      }
+      #ok {
+        width: 40px;
+        transform: translate(-68px, 25px);
+        opacity: 0;
+
+        @keyframes ok {
+          0% {
+            opacity: 0;
+          }
+          99% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    button {
+      background: #6ece3b;
+      padding: 11px 40px;
+      border-radius: 3px;
+      cursor: pointer;
+      box-shadow: 0 3px #498c25;
+      transition: 0.2s;
+      transform: translate(0, -10px);
+      color: #fff;
+      font-weight: bold;
+      &:hover {
+        box-shadow: 0 1px #498c25;
+        transform: translate(0, -7px);
+      }
+    }
+  }
+}

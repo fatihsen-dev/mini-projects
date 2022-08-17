@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+  z-index: 1;
+
+  input[id="btn"] {
+    display: none;
+
+    &:checked {
+      & ~ .btn {
+        border: 14px solid #fff;
+        background: green;
+      }
+      & ~ .scale {
+        animation: afterAnimate .3s ease-in-out forwards .1s;
+
+        @for $i from 0 through 12 {
+          @keyframes afterAnimate {
+            0% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+              transform: scale(1.6);
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 100%;
+    transition: 0.2s ease-in-out;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .scale {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0;
+    .line {
+      border-radius: 100%;
+      height: 70px;
+      width: 70px;
+      background: transparent;
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 1px;
+        background: #fff;
+        top: 0;
+      }
+
+      @for $i from 0 through 12 {
+        &.line-#{$i} {
+          transform: rotate(($i * 30) + deg);
+        }
+      }
+    }
+  }
+}

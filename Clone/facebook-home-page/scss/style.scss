@@ -1,0 +1,1042 @@
+$bg-color1:#18191A;
+$bg-color2:#3A3B3C;
+$bg-color3:#242526;
+$bg-color4:#474747;
+$bg-color5:#303030;
+$text-color:#E4E6EB;
+$other-color:#129AF6;
+$icon-color:rgb(45, 136, 255);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 200ms;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background: $bg-color1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header{
+  width: 100%;
+  height: 56px;
+  background: $bg-color3;
+  top: 0;
+  position: fixed;
+  border-bottom: 1px solid $bg-color2;
+  padding: 0 6px;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  z-index: 999;
+  & .nav-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    & .facebook-logo{
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      svg > .two{
+        fill: white;
+      }
+    }
+
+    & .search{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      width: 240px;
+
+      & input[type="text"]{
+        padding: 0px 36px;
+        width: 240px;
+        height: 40px;
+        background: $bg-color2;
+        border-radius: 40px;
+        color: rgba(255, 255, 255,1);
+        font-size: 16px;
+        margin-left:8px;
+        &:focus{
+          padding-left: 20px;
+          z-index: 2;
+          margin-left: -6px;
+        }
+
+        &:focus + ion-icon{
+          display: none;
+        }
+
+        &::placeholder{
+          color: rgba(255, 255, 255,0.6);
+          font-weight: 400;
+          font-size: 15px;
+        }
+        &:focus::placeholder{
+          color: rgba(255, 255, 255,0.4);
+        }
+        &:focus + ion-icon + .panel{
+          display: flex;
+        }
+      }
+      & ion-icon{
+        position: absolute;
+        font-size: 19px;
+        color: rgba(255, 255, 255,0.6);
+        left: 18px;
+      }
+      & .panel{
+        position: absolute;
+        left: -82px;
+        width: 340px;
+        height: 100px;
+        background: $bg-color3;
+        z-index: 1;
+        color: white;
+        display: none;
+        top: 0;
+        border-radius: 0 0 10px 10px;
+        justify-content: center;
+
+        & ion-icon{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          z-index: 2;
+          position: absolute;
+          left:  40px;
+          top: 10px;
+        }
+
+        & span{
+          display: block;
+          width: 200px;
+          height: 20px;
+          position: absolute;
+          bottom: 20px;
+          left: 140px;
+          font-size: 15px;
+          color: rgba(255, 255, 255,0.4);
+        }
+      }
+    }
+  }
+  & .nav-midle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    & div{
+      height: 46px;
+      width: auto;
+      padding: 0 50px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      position: relative;
+      margin: 0 5px;
+      &:hover{
+        background: $bg-color2;
+      }
+      &:first-child:hover{
+        background: transparent;
+      }
+      &:first-child{
+
+        & svg > path{
+          fill: $icon-color;
+        }
+      }
+      &:last-child::before{
+        content: '2';
+        font-size: 12px;
+        background: #F35369;
+        filter: contrast(2.1);
+        color: white;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        line-height: 18px;
+        position: absolute;
+        right: 36px;
+        top: 2px;
+      }
+
+      &:first-child::after{
+        content: '';
+        height: 3px;
+        width: 100%;
+        background: $icon-color;
+        position: absolute;
+        bottom: -5px;
+
+      }
+
+      & svg > path{
+        fill: rgba(255, 255, 255,0.6);
+      }
+    }
+  }
+  & .nav-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    & .person,.menu,.mesage,.notification,.other{
+      margin: 4px;
+    }
+    & .person{
+      display: flex;
+      align-items: center;
+      width: 80px;
+      padding: 4px;
+      height: 36px;
+      border-radius: 40px;
+      cursor: pointer;
+      &:hover{
+        background: $bg-color2;
+      }
+
+      & img{
+        width: 28px;
+        float: left;
+      }
+      & span{
+        margin-left: 4px;
+        color: rgba(255, 255, 255,.8);
+        font-weight: 500;
+      }
+    }
+    & .menu{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      flex-wrap: wrap;
+      position: relative;
+      background: $bg-color2;
+      border-radius: 50%;
+      cursor: pointer;
+      & i{
+        display: block;
+        height: 0;
+        position: absolute;
+        font-size: 19px;
+        color: rgba(255, 255, 255,.8);
+        &:nth-of-type(1){
+          top: 4px;
+        }
+        &:nth-of-type(2){
+          top: 11px;
+        }
+        &:nth-of-type(3){
+          top: 18px;
+        }
+      }
+      &:hover{
+        background: $bg-color4;
+      }
+    }
+    & .mesage{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: $bg-color2;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover{
+        background: $bg-color4;
+      }
+
+      & svg > path{
+        fill: rgba(255, 255, 255,.8);
+      }
+    }
+    & .notification{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: $bg-color2;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      &:hover{
+        background: $bg-color4;
+      }
+
+      &::after{
+        content: '3';
+        position: absolute;
+        background: #F35369;
+        filter: contrast(2.1);
+        width: 19px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: white;
+        font-size: 12px;
+        right: -5px;
+        top: -6px;
+      }
+
+      & svg > path{
+        fill: rgba(255, 255, 255,.8);
+      }
+    }
+    & .other{
+      display: flex;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: $bg-color2;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-right: 10px;
+      &:hover{
+        background: $bg-color4;
+      }
+
+      & i{
+        color: rgba(255, 255, 255,.8);
+        font-size: 20px;
+        line-height: 34px;
+      }
+    }
+  }
+}
+.nav{
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 56px;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  & .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    margin: 16px 20px 10px 8px;
+    position: relative;
+    &::after{
+      content: '';
+      width: 330px;
+      height: 1px;
+      background: #444;
+      position: absolute;
+      bottom: -10px;
+      left: 8px;
+    }
+    & div{
+      display: flex;
+      align-items: center;
+      padding: 8px 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 15px;
+      position: relative;
+      color: rgba(255, 255, 255,.9);
+      &:hover{
+        background: $bg-color2;
+      }
+
+      &:nth-of-type(4){
+
+        & span{
+          position: relative;
+          top: -10px;
+        }
+        & .new{
+          color: rgb(46, 137, 255);
+          position: absolute;
+          top: 30px;
+          left: 66px;
+          font-size: 12px;
+          font-weight: normal;
+          &::after{
+            content: '';
+            width: 7px;
+            height: 7px;
+            background: rgb(46, 137, 255);
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: 6px;
+          }
+        }
+      }
+      & i{
+        margin-right: 10px;
+      }
+    }
+    & div > img{
+      width: 37px;
+      height: 37px;
+      margin-right: 11px;
+    }
+    & div:last-of-type > i{
+      display: flex;
+      width: 36px;
+      height: 36px;
+      background: $bg-color5;
+      border-radius: 50%;
+      color: white;
+      font-size: 14px;
+      justify-content: center;
+      align-items: center;
+    }
+  }  
+  & .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    margin: 8px 20px 10px 8px;
+    position: relative;
+
+    & div{
+      display: flex;
+      align-items: center;
+      padding: 8px 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 15px;
+      position: relative;
+      font-size: 16px;
+      color: rgba(255, 255, 255,.9);
+      &:hover{
+        background: $bg-color2;
+      }
+      &:nth-of-type(1):hover{
+        background:transparent;
+        cursor: text;
+        user-select: text;
+      }
+
+      &:nth-of-type(1){
+        font-size: 17px;
+        color: #aaa;
+      }
+    }
+    & div > img{
+      width: 37px;
+      height: 37px;
+      margin-right: 11px;
+      border-radius: 8px;
+    }
+    & div:last-of-type > i{
+      display: flex;
+      width: 38px;
+      height: 38px;
+      background: $bg-color5;
+      border-radius: 50%;
+      color: white;
+      font-size: 14px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+    }
+  }
+  & .help{
+    margin-top: 30px;
+    margin-left: 18px;
+    font-size: 13px;
+    color: #aaa;
+    padding: 30px 60px 20px 0;
+    user-select: text;
+  }
+}
+.section{
+  width: 60%;
+  margin-top: 56px;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 140px;
+  & .story{
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    width: 688px;
+    height: 220px;
+    & div{
+      width: 20%;
+      border-radius: 3px;
+      margin: 4px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      &:hover{
+        border-radius: 11px;
+      }
+      &:hover > .bg{
+        transform: scale(1.03);
+        border-radius: 20px;
+      }
+      & .avatar{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        z-index: 2;
+        border: 4px solid rgb(46, 137, 255);
+        border-radius: 50%;
+      }
+      & .bg{
+        width: 100%;
+        height: 100%;
+        border-radius:12px;
+        background-size: cover;
+        position: absolute;
+      }
+      & span{
+        display: flex;
+        position: absolute;
+        color: white;
+        font-weight: 500;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        justify-content: center;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+      }
+      & .create-story{
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        justify-content: center;
+        background: $bg-color3;
+        height: 52px;
+        font-size: 13px;
+        align-items: flex-end;
+        padding-bottom: 10px;
+      }
+      & .add-story-icon{
+        background: rgb(46, 137, 255);
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 26px;
+        left: 30px;
+        border: 4px solid $bg-color3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    & .other{
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: -21px;
+      top: 94px;
+      background: $bg-color4;
+      &:hover{
+        border-radius: 50%;
+      }
+    }
+  }
+  & .create-a-post{
+    width: 682px;
+    background: $bg-color3;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    & .top{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 10px;
+      &::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #444;
+        position: absolute;
+        top: 54px;
+        left: 0;
+      }
+      & img{
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        cursor: pointer;
+        &:hover{
+          filter: brightness(1.1);
+        }
+      }
+      & input[type="checkbox"]{
+        display: none;
+      }
+      & label{
+        background: $bg-color2;
+        height: 40px;
+        width: 100%;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        font-size: 17px;
+        font-weight: 400;
+        color: rgba(255, 255, 255,.5 );
+        user-select: none;
+        cursor: pointer;
+
+        &:hover{
+          background: $bg-color4;
+          transition: background 0ms;
+        }
+      }
+    }
+    & .bottom{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      margin-top: 24px;
+
+      & div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 30px;
+        border-radius: 8px;
+        flex: 1;
+        cursor: pointer;
+        &:hover{
+          background: $bg-color4;
+        }
+      }
+      & div > svg{
+        margin-right: 7px;
+      }
+      & div:nth-of-type(1) > svg{
+        fill: rgb(243, 66, 95);
+      }
+      & div:nth-of-type(2) > svg{
+        fill: rgb(69, 189, 98);
+      }
+      & div:nth-of-type(3) > svg{
+        fill: rgb(247, 185, 40);
+      }
+      & span{
+        font-weight: 500;
+        font-size: 15px;
+        color: rgba(255, 255, 255,.6);
+      }
+    }
+  }
+  & .create-room{
+    width: 682px;
+    background: $bg-color3;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    & a{
+      padding: 6px 12px;
+      display: flex;
+      border-radius: 20px;
+      justify-content: center;
+      border: 2px solid rgba(45, 136, 255, 0.2);
+      align-items: center;
+      margin-right: 8px;
+      &:hover{
+        background: $bg-color4;
+      }
+      & i{
+        background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/F4B8kQW0apG.png");
+        background-position: 0px 0px;
+        background-size: auto;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: 6px;
+      }
+      & span{
+        color: rgb(69, 153, 255);
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+    & div{
+      display: flex;
+      position: relative;
+      margin: 0 10px;
+      &::after{
+        content: '';
+        display: block;
+        z-index: 2;
+        width: 8px;
+        height: 8px;
+        border: 2px solid $bg-color3;
+        position: absolute;
+        background: rgb(49, 162, 76);
+        border-radius: 50%;
+        bottom: 0px;
+        right: 4px;
+      }
+    }
+    & div > img{
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      &:hover{
+        filter: brightness(1.2);
+      }
+    }
+  }
+  & .post{
+    width: 682px;
+    background: $bg-color3;
+    border-radius: 8px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    & .person{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      margin-bottom: 10px;
+      padding: 13px 18px 10px 18px;
+      & img{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        box-shadow: 0 0 1px 2px $bg-color3,
+                    0 0 1px 4px $other-color;
+        margin-right: 10px;
+        &:hover{
+          filter: brightness(1.1);
+        }
+      }
+      & .text{
+        & .name{
+          color: white;
+          font-weight: 500;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        & .time{
+          color: #bbb;
+          & a{
+            color: #bbb;
+            font-size: 13px;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          & svg{
+            fill: #bbb;
+          }
+        }
+      }
+      & .other{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+        margin-right: 18px;
+        &:hover{
+          background: $bg-color4;
+        }
+        & svg{
+          fill: #bbb;
+        }
+      }
+    }
+    & .comment{
+      color: white;
+      margin: 0 18px;
+      & .link{
+        margin: 10px 0;
+        display: block;
+        color: rgb(69, 153, 255);
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .tag{
+        color: rgb(69, 153, 255);
+        text-transform: capitalize;
+        margin-right: 6px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    & .picture{
+      width: 100%;
+      margin-top: 10px;
+
+      & img{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        cursor: pointer;
+      }
+    }
+    & .all-like-and-comment{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin:10px 18px;
+      position: relative;
+      &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #444;
+        position: absolute;
+        bottom: -10px;
+      }
+      & .like{
+        position: relative;
+        & img{
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          border: 2px solid $bg-color3;
+          border-radius: 50%;
+        }
+        & .heard{
+          left: 17px;
+        }
+        & .like-length{
+          display: inline-block;
+          margin-left: 42px;
+          color: #bbb;
+          font-size: 15px;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      & .comment{
+        margin: 0;
+        display: flex;
+        & a{
+          color: #bbb;
+          font-size: 15px;
+          margin-left: 6px;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    & .buttons{
+      width: 100%;
+      padding: 6px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 6px;
+        border-radius: 4px;
+        &:hover{
+          background: $bg-color4;
+        }
+        & span{
+          font-weight: 500;
+          color: #bbb;
+        }
+      }
+      & .like{
+
+        svg{
+          fill: #bbb;
+          width: 19px;
+          margin-right: 6px;
+        }
+      }
+      & .comment{
+        
+        & ion-icon{
+          font-size: 18px;
+          margin-right: 6px;
+        }
+      }
+      & .share{
+
+        svg{
+          fill: #bbb;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+.aside{
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 56px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 10px 28px;
+
+  & .top{
+    font-weight: 500;
+    padding-left: 8px;
+    display: flex;
+    color: #bbb;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 4px;
+    & span{
+      display: inline-block;
+      margin-right: 140px;
+    }
+    & div{
+      float: right;
+      fill: #bbb;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover{
+        background: $bg-color2;
+      }
+      & svg{
+        width: 16px;
+      }
+    }
+  }
+  & .midle{
+
+    &::after{
+      content: '';
+      width: 330px;
+      margin: 8px;
+      height: 1px;
+      background: #555;
+      display: block;
+    }
+
+    & ul li a img{
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+    }
+    & ul li a{
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 7px;
+      border-radius: 10px;
+      position: relative;
+      &:hover{
+        background: $bg-color4;
+      }
+      &::after{
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: rgb(49, 162, 76);
+        border: 2px solid $bg-color1;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 8px;
+        left: 36px;
+      }
+    }
+  }
+  & .bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0 0 0px;
+    & span{
+      color: #bbb;
+      font-weight: 500;
+      font-size: 17px;
+      padding-left: 8px;
+    }
+
+    & a{
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-radius: 10px;
+      margin-top: 20px;
+
+      &:hover{
+        background: $bg-color4;
+      }
+      & div{
+        display: flex;
+        width: 34px;
+        height: 34px;
+        background: $bg-color2;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

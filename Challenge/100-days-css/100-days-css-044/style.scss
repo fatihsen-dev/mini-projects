@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 3px;
+
+  .items {
+    box-sizing: border-box;
+    position: absolute;
+    border: 1px solid #888;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+  }
+  @for $i from 1 to 21 {
+    & .item-#{$i} {
+      width: 200px - ($i * 9.3);
+      height: 200px - ($i * 9.3);
+      z-index: $i;
+      $color: 70 + ($i * 4);
+      border-color: rgb($color, $color, $color);
+      animation: item 3s ease-in-out ($i / 30) + s alternate infinite;
+
+      @keyframes item {
+        to{
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}

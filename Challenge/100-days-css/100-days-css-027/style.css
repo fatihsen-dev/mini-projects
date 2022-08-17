@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: repeating-linear-gradient(to top left, gold 0px 10px, orange 10px 20px);
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.box .list-container {
+  width: 240px;
+  height: 280px;
+  background: #ffffff;
+  box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.box .list-container input[type="checkbox"] {
+  display: none;
+}
+
+.box .list-container .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #497081;
+  font-size: 13px;
+}
+
+.box .list-container .top .text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.box .list-container .list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  position: relative;
+  font-size: 14px;
+  color: #497081;
+  font-weight: 400;
+  width: 100%;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.box .list-container .list label {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  padding: 0px 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+}
+
+.box .list-container .list label::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  outline: 1px solid #497081;
+  transition: 0.3s ease-in-out;
+}
+
+.box .list-container .list label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 80%;
+  height: 1px;
+  background: #497081;
+  left: -100%;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.box .list-container .item-1:checked ~ .list > label:nth-of-type(1) {
+  color: #497081b0;
+}
+
+.box .list-container .item-1:checked ~ .list > label:nth-of-type(1)::after {
+  background: #497081;
+}
+
+.box .list-container .item-1:checked ~ .list > label:nth-of-type(1)::before {
+  left: -4px;
+}
+
+.box .list-container .item-2:checked ~ .list > label:nth-of-type(2) {
+  color: #497081b0;
+}
+
+.box .list-container .item-2:checked ~ .list > label:nth-of-type(2)::after {
+  background: #497081;
+}
+
+.box .list-container .item-2:checked ~ .list > label:nth-of-type(2)::before {
+  left: -4px;
+}
+
+.box .list-container .item-3:checked ~ .list > label:nth-of-type(3) {
+  color: #497081b0;
+}
+
+.box .list-container .item-3:checked ~ .list > label:nth-of-type(3)::after {
+  background: #497081;
+}
+
+.box .list-container .item-3:checked ~ .list > label:nth-of-type(3)::before {
+  left: -4px;
+}
+
+.box .list-container .item-4:checked ~ .list > label:nth-of-type(4) {
+  color: #497081b0;
+}
+
+.box .list-container .item-4:checked ~ .list > label:nth-of-type(4)::after {
+  background: #497081;
+}
+
+.box .list-container .item-4:checked ~ .list > label:nth-of-type(4)::before {
+  left: -4px;
+}
+/*# sourceMappingURL=style.css.map */

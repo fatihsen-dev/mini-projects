@@ -1,0 +1,1114 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --main-text-color:#F5F5F5;
+  --window-bg-color:#242F3D;
+  --main-bg-color:#17212B;
+  --chat-bg-color:#0E1621;
+  --blue-color:#2B5278;
+  --blue-text-color:#73B9F5;
+  --gray-text-color:#6F8091;
+  --icon-color:#6C7883;
+  --hover-bg-color:#202B36;
+  --menu-bg-color:#276899;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.telegram {
+  min-width: 1200px;
+  min-height: 720px;
+  width: 1200px;
+  height: 720px;
+  background: #222;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.telegram .window {
+  width: 100%;
+  height: 26px;
+  background: var(--window-bg-color);
+  border-radius: 10px 10px 0 0;
+}
+
+.telegram .window .window-icon {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  color: var(--icon-color);
+  align-items: center;
+}
+
+.telegram .window .window-icon .close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 0 10px 0 0;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.telegram .window .window-icon .close-icon:hover {
+  background: red;
+}
+
+.telegram .window .window-icon .close-icon:hover svg {
+  fill: var(--main-text-color);
+}
+
+.telegram .window .window-icon .close-icon svg {
+  fill: var(--icon-color);
+}
+
+.telegram .window .window-icon .minimize-window-icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.telegram .window .window-icon .minimize-window-icon:hover {
+  background: var(--hover-bg-color);
+}
+
+.telegram .window .window-icon .minimize-window-icon::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 10px;
+  border-bottom: 3px solid var(--icon-color);
+  position: absolute;
+}
+
+.telegram .window .window-icon .full-screen-icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.telegram .window .window-icon .full-screen-icon:hover {
+  background: var(--hover-bg-color);
+}
+
+.telegram .window .window-icon .full-screen-icon::before {
+  width: 5px;
+  height: 5px;
+  border: 3px solid var(--icon-color);
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.telegram .chat-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.telegram .chat-container .sidebar {
+  height: 100%;
+  width: 308px;
+  background: var(--main-bg-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 0 10px;
+  overflow: hidden;
+  border-right: 2px solid var(--chat-bg-color);
+}
+
+.telegram .chat-container .sidebar .search {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px 0 0;
+}
+
+.telegram .chat-container .sidebar .search .search-icon {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.telegram .chat-container .sidebar .search .search-icon:hover svg {
+  fill: var(--main-text-color);
+}
+
+.telegram .chat-container .sidebar .search .search-icon svg {
+  width: 30px;
+  fill: var(--icon-color);
+}
+
+.telegram .chat-container .sidebar .search .search-bar {
+  height: 34px;
+  flex: 1;
+  background: var(--window-bg-color);
+  border-radius: 4px;
+  padding: 0 14px;
+  caret-color: var(--main-text-color);
+  font-size: 15px;
+  color: var(--main-text-color);
+  letter-spacing: 1px;
+}
+
+.telegram .chat-container .sidebar .search .search-bar::placeholder {
+  transform: translate(2px, 1px);
+  color: var(--icon-color);
+  opacity: .9;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+.telegram .chat-container .sidebar .search .search-bar:focus::placeholder {
+  opacity: .7;
+}
+
+.telegram .chat-container .sidebar .search input[type="checkbox"] {
+  display: none;
+}
+
+.telegram .chat-container .sidebar .search input[type="checkbox"]:nth-of-type(2):checked + .menu > .profile > label > .arrow-icon > svg {
+  transform: rotate(180deg);
+}
+
+.telegram .chat-container .sidebar .search input[type="checkbox"]:nth-of-type(2):checked + .menu > .option {
+  transform: translate(0);
+}
+
+.telegram .chat-container .sidebar .search .menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--main-bg-color);
+  inset: 0;
+  transform: translate(-308px, 0);
+  transition: .1s;
+  z-index: 1;
+  user-select: none;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile {
+  width: 100%;
+  height: 150px;
+  background: var(--menu-bg-color);
+  position: relative;
+  z-index: 2;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .photo-saved-message {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .photo-saved-message label {
+  cursor: pointer;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .photo-saved-message label img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .photo-saved-message .saved-icon {
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue-color);
+  font-size: 18px;
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .profile-name-and-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 0 30px;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .profile-name-and-number .name-number .profile-name {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: .5px;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .profile-name-and-number .name-number .profile-number {
+  font-size: 14px;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .profile-name-and-number .arrow-icon {
+  width: 30px;
+}
+
+.telegram .chat-container .sidebar .search .menu .profile .profile-name-and-number .arrow-icon svg {
+  transition: .2s;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .active-account {
+  display: flex;
+  padding: 8px 25px 2px 25px;
+  cursor: pointer;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .active-account:hover {
+  background: var(--hover-bg-color);
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .active-account .img {
+  position: relative;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .active-account .img img {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .active-account .img .icon {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--menu-bg-color);
+  color: var(--main-text-color);
+  font-size: 10px;
+  border-radius: 50%;
+  border: 3px solid var(--main-bg-color);
+  transform: translate(24px, 18px);
+  padding-top: 3px;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .active-account .active-account-name {
+  margin-left: 20px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  line-height: 2.5;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .add-account-button {
+  display: flex;
+  padding: 10px 25px 6px 28px;
+  cursor: pointer;
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .add-account-button:hover {
+  background: var(--hover-bg-color);
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .add-account-button:hover .person-icon svg {
+  fill: var(--main-text-color);
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .add-account-button .person-icon svg {
+  width: 32px;
+  fill: var(--icon-color);
+  transition: .2s;
+}
+
+.telegram .chat-container .sidebar .search .menu .add-account-menu .add-account-button span {
+  line-height: 2;
+  margin-left: 26px;
+  font-weight: 400;
+}
+
+.telegram .chat-container .sidebar .search .menu .option {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 2px solid var(--chat-bg-color);
+  padding: 10px 0;
+  transform: translate(0, -126px);
+  background: var(--main-bg-color);
+  z-index: 1;
+  transition: .2s;
+}
+
+.telegram .chat-container .sidebar .search .menu .option .option-item {
+  display: flex;
+  width: 100%;
+  padding: 10px 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.telegram .chat-container .sidebar .search .menu .option .option-item:hover {
+  background: var(--hover-bg-color);
+}
+
+.telegram .chat-container .sidebar .search .menu .option .option-item:hover .icon svg, .telegram .chat-container .sidebar .search .menu .option .option-item:hover .icon i {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container .sidebar .search .menu .option .option-item .icon svg, .telegram .chat-container .sidebar .search .menu .option .option-item .icon i {
+  width: 26px;
+  font-size: 22px;
+  color: var(--icon-color);
+  transition: .2s;
+}
+
+.telegram .chat-container .sidebar .search .menu .option .option-item .option-item-name {
+  color: var(--main-text-color);
+  margin-left: 10px;
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info {
+  width: 100%;
+  height: 50px;
+  transform: translate(0, 34px);
+  padding: 0 30px;
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info .telegram-desktop-text {
+  color: var(--gray-text-color);
+  font-weight: 500;
+  transition: .2s;
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info .telegram-desktop-text:hover {
+  text-decoration: underline;
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info .version-about a {
+  color: var(--gray-text-color);
+  transition: .2s;
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info .version-about a:hover {
+  text-decoration: underline;
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info .version-about a:nth-of-type(1) {
+  position: relative;
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info .version-about a:nth-of-type(1)::after {
+  content: '';
+  width: 10px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  background: var(--gray-text-color);
+  inset: 0;
+  transform: translate(122px, 13px);
+}
+
+.telegram .chat-container .sidebar .search .menu .telegram-info .version-about a:nth-of-type(2) {
+  margin-left: 15px;
+}
+
+.telegram .chat-container .sidebar .persons-container {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label {
+  background: var(--main-bg-color);
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--main-text-color);
+  transition: .1s;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  transition: .1s;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label:hover {
+  background: var(--hover-bg-color);
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label .text-container {
+  margin-left: 14px;
+  flex: 1;
+  color: var(--gray-text-color);
+  position: relative;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label .text-container .name-time-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label .text-container .name-time-container .person-name {
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label .text-container .name-time-container .last-time {
+  font-size: 13px;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label .text-container .last-message-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label .text-container .last-message-container .last-send {
+  display: inline;
+  margin-right: 4px;
+  color: var(--blue-text-color);
+}
+
+.telegram .chat-container .sidebar .persons-container .person-label .text-container .last-message-container .last-message {
+  display: inline-block;
+  white-space: nowrap;
+  width: 189px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.telegram .chat-container .chat {
+  background: var(--chat-bg-color);
+  flex: 1;
+  border-radius: 0 0 10px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.telegram .chat-container .chat .person-bar {
+  height: 60px;
+  width: 100%;
+  background: var(--main-bg-color);
+  border-bottom: 1px solid var(--chat-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.telegram .chat-container .chat .person-bar .name-and-last-active .person-name {
+  font-weight: 500;
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container .chat .person-bar .name-and-last-active .last-active-time {
+  color: var(--gray-text-color);
+}
+
+.telegram .chat-container .chat .person-bar .active-person-icon {
+  display: flex;
+}
+
+.telegram .chat-container .chat .person-bar .active-person-icon .active-person-all-icon {
+  cursor: pointer;
+}
+
+.telegram .chat-container .chat .person-bar .active-person-icon .active-person-all-icon:hover svg {
+  fill: var(--main-text-color);
+}
+
+.telegram .chat-container .chat .person-bar .active-person-icon .active-person-all-icon svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 7px;
+  fill: var(--icon-color);
+  transition: .1s;
+}
+
+.telegram .chat-container .chat .active-chat {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  overflow: auto;
+}
+
+.telegram .chat-container .chat .active-chat .against, .telegram .chat-container .chat .active-chat .mine {
+  display: flex;
+  margin: 10px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.telegram .chat-container .chat .active-chat .against .message-container, .telegram .chat-container .chat .active-chat .mine .message-container {
+  display: flex;
+  color: var(--main-text-color);
+  height: 34px;
+  padding: 4px 14px;
+  position: relative;
+}
+
+.telegram .chat-container .chat .active-chat .against .message-container::before, .telegram .chat-container .chat .active-chat .mine .message-container::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 20px solid transparent;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translate(0, -7px);
+}
+
+.telegram .chat-container .chat .active-chat .against .message-container .time, .telegram .chat-container .chat .active-chat .mine .message-container .time {
+  color: var(--gray-text-color);
+  font-size: 13px;
+  line-height: 2.8;
+}
+
+.telegram .chat-container .chat .active-chat .against {
+  justify-content: start;
+  margin-left: 10px;
+}
+
+.telegram .chat-container .chat .active-chat .against .message-container {
+  border-radius: 6px 6px 6px 0;
+  background: var(--hover-bg-color);
+}
+
+.telegram .chat-container .chat .active-chat .against .message-container::before {
+  transform: translate(-10px, 0);
+  border-bottom: 20px solid var(--hover-bg-color);
+  left: 0;
+  bottom: 0;
+}
+
+.telegram .chat-container .chat .active-chat .against .message-container .time {
+  margin-left: 10px;
+}
+
+.telegram .chat-container .chat .active-chat .mine {
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.telegram .chat-container .chat .active-chat .mine .message-container {
+  background: var(--blue-color);
+  border-radius: 6px 6px 0 6px;
+}
+
+.telegram .chat-container .chat .active-chat .mine .message-container::before {
+  right: 0;
+  bottom: 0;
+  transform: translate(10px, 0);
+  border-bottom: 20px solid var(--blue-color);
+}
+
+.telegram .chat-container .chat .active-chat .mine .message-container .icon svg {
+  width: 22px;
+  margin-top: 4px;
+  color: var(--blue-text-color);
+}
+
+.telegram .chat-container .chat .active-chat .mine .message-container .time {
+  margin: 0 10px;
+}
+
+.telegram .chat-container .chat .message-bar {
+  width: 100%;
+  height: 50px;
+  background: var(--main-bg-color);
+  border-radius: 0 0 10px 0;
+  border-top: 1px solid var(--chat-bg-color);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.telegram .chat-container .chat .message-bar .messame-bar-icon {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  cursor: pointer;
+}
+
+.telegram .chat-container .chat .message-bar .messame-bar-icon:hover svg {
+  fill: var(--main-text-color);
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container .chat .message-bar .messame-bar-icon:hover i {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container .chat .message-bar .messame-bar-icon svg {
+  width: 36px;
+  fill: var(--icon-color);
+  transition: .2s;
+}
+
+.telegram .chat-container .chat .message-bar .messame-bar-icon i {
+  transition: .2s;
+}
+
+.telegram .chat-container .chat .message-bar .file-icon {
+  transform: rotate(220deg);
+}
+
+.telegram .chat-container .chat .message-bar .smile-icon {
+  margin-right: 16px;
+}
+
+.telegram .chat-container .chat .message-bar input[type="text"] {
+  flex: 1;
+  height: 30px;
+  background: var(--main-bg-color);
+  margin: 0 20px;
+  caret-color: var(--main-text-color);
+  color: var(--main-text-color);
+  font-size: 16PX;
+}
+
+.telegram .chat-container .chat .message-bar input[type="text"]::placeholder {
+  color: var(--icon-color);
+  opacity: .8;
+  transform: translate(4px, 0);
+  font-size: 14PX;
+}
+
+.telegram .chat-container .chat .close-menu {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: none;
+  z-index: 1;
+  flex: 1;
+}
+
+.telegram .chat-container input[type="radio"] {
+  display: none;
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(10):checked + input[type="radio"] + .sidebar > .search > .menu {
+  transform: translate(0, 0);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(10):checked + input[type="radio"] + .sidebar + .chat > .close-menu {
+  display: inline-block;
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(1):checked + input[type="radio"]:nth-of-type(2) +
+input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-1 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(1):checked + input[type="radio"]:nth-of-type(2) +
+input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-1 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(1):checked + input[type="radio"]:nth-of-type(2) +
+input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-1 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(1):checked + input[type="radio"]:nth-of-type(2) +
+input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-1 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(2):checked + input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-2 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(2):checked + input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-2 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(2):checked + input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-2 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(2):checked + input[type="radio"]:nth-of-type(3) +
+input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-2 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(3):checked + input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-3 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(3):checked + input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-3 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(3):checked + input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-3 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(3):checked + input[type="radio"]:nth-of-type(4) +
+input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-3 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(4):checked + input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-4 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(4):checked + input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-4 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(4):checked + input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-4 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(4):checked + input[type="radio"]:nth-of-type(5) +
+input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-4 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(5):checked + input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-5 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(5):checked + input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-5 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(5):checked + input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-5 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(5):checked + input[type="radio"]:nth-of-type(6) +
+input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-5 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(6):checked + input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-6 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(6):checked + input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-6 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(6):checked + input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-6 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(6):checked + input[type="radio"]:nth-of-type(7) +
+input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-6 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(7):checked + input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-7 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(7):checked + input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-7 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(7):checked + input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-7 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(7):checked + input[type="radio"]:nth-of-type(8) +
+input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-7 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(8):checked + input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-8 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(8):checked + input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-8 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(8):checked + input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-8 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(8):checked + input[type="radio"]:nth-of-type(9) +
+input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-8 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(9):checked + input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-9 {
+  background: var(--blue-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(9):checked + input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-9 .text-container {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(9):checked + input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-9 .text-container .last-message-container .last-send {
+  color: var(--main-text-color);
+}
+
+.telegram .chat-container input[type="radio"]:nth-of-type(9):checked + input[type="radio"]:nth-of-type(10) +
+input[type="radio"]:nth-of-type(11) +
+.sidebar > .persons-container > .person-label-9 .text-container .last-message-container .last-message {
+  color: var(--main-text-color);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #f5cc7f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+  z-index: 99;
+}
+
+.box .s {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  top: -100px;
+  z-index: 1;
+  left: -80px;
+  transform: rotateX(68deg) rotateY(-18deg);
+  animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateX(68deg) rotateY(-18deg) rotate(360deg);
+  }
+}
+
+.box .s .y {
+  border-color: transparent transparent #fff transparent;
+  border-width: 26px 26px 106px 26px;
+  border-style: solid;
+  background: transparent;
+  background: transparent;
+  position: absolute;
+  transform-origin: 50% 20%;
+  top: 80px;
+}
+
+.box .s .y:nth-last-of-type(odd) {
+  border-color: transparent transparent red transparent;
+}
+
+.box .s .y.y-0 {
+  transform: rotate(0deg) rotateX(-25deg);
+}
+
+.box .s .y.y-1 {
+  transform: rotate(30deg) rotateX(-25deg);
+}
+
+.box .s .y.y-2 {
+  transform: rotate(60deg) rotateX(-25deg);
+}
+
+.box .s .y.y-3 {
+  transform: rotate(90deg) rotateX(-25deg);
+}
+
+.box .s .y.y-4 {
+  transform: rotate(120deg) rotateX(-25deg);
+}
+
+.box .s .y.y-5 {
+  transform: rotate(150deg) rotateX(-25deg);
+}
+
+.box .s .y.y-6 {
+  transform: rotate(180deg) rotateX(-25deg);
+}
+
+.box .s .y.y-7 {
+  transform: rotate(210deg) rotateX(-25deg);
+}
+
+.box .s .y.y-8 {
+  transform: rotate(240deg) rotateX(-25deg);
+}
+
+.box .s .y.y-9 {
+  transform: rotate(270deg) rotateX(-25deg);
+}
+
+.box .s .y.y-10 {
+  transform: rotate(300deg) rotateX(-25deg);
+}
+
+.box .s .y.y-11 {
+  transform: rotate(330deg) rotateX(-25deg);
+}
+
+.box .s .y.y-12 {
+  transform: rotate(360deg) rotateX(-25deg);
+}
+
+.box .stick {
+  height: 130px;
+  width: 6px;
+  background: #666;
+  transform: rotate(-22deg) translateX(-133px) translateY(-42px);
+  border-radius: 2px;
+}
+
+.box .stick::after {
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  bottom: 0px;
+  left: 5px;
+  width: 78px;
+  height: 5px;
+  background: #AB9038;
+}
+
+.box .s-1 {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  top: 105px;
+  left: 170px;
+  z-index: 1;
+  transform: rotateY(-30deg) rotateX(50deg);
+  animation: rotate2 6s linear infinite;
+}
+
+@keyframes rotate2 {
+  to {
+    transform: rotateY(-30deg) rotateX(50deg) rotate(360deg);
+  }
+}
+
+.box .s-1 .y {
+  border-color: transparent transparent #AB9038 transparent;
+  border-width: 10px 16px 70px 16px;
+  border-style: solid;
+  background: transparent;
+  background: transparent;
+  position: absolute;
+  transform-origin: 50% 20%;
+  top: 80px;
+}
+
+.box .s-1 .y:nth-last-of-type(odd) {
+  border-color: transparent transparent #AB9038 transparent;
+}
+
+.box .s-1 .y.y-0 {
+  transform: rotate(0deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-1 {
+  transform: rotate(30deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-2 {
+  transform: rotate(60deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-3 {
+  transform: rotate(90deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-4 {
+  transform: rotate(120deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-5 {
+  transform: rotate(150deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-6 {
+  transform: rotate(180deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-7 {
+  transform: rotate(210deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-8 {
+  transform: rotate(240deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-9 {
+  transform: rotate(270deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-10 {
+  transform: rotate(300deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-11 {
+  transform: rotate(330deg) rotateX(-25deg);
+}
+
+.box .s-1 .y.y-12 {
+  transform: rotate(360deg) rotateX(-25deg);
+}
+/*# sourceMappingURL=style.css.map */

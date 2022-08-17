@@ -1,0 +1,885 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box h1 {
+  font-size: 60px;
+  position: absolute;
+}
+
+.box .front-text {
+  position: absolute;
+  pointer-events: none;
+  width: 400px;
+  top: 169px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: transparent;
+  z-index: 10;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.box .bg {
+  width: 100%;
+  height: 100%;
+  background: #e67e22;
+  position: absolute;
+  transform: translateY(-400px);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .line {
+  width: 400px;
+  height: 2px;
+  z-index: 2;
+}
+
+.box .line.line-0:hover ~ .bg {
+  transform: translateY(-401px);
+}
+
+.box .line.line-1:hover ~ .bg {
+  transform: translateY(-399px);
+}
+
+.box .line.line-2:hover ~ .bg {
+  transform: translateY(-397px);
+}
+
+.box .line.line-3:hover ~ .bg {
+  transform: translateY(-395px);
+}
+
+.box .line.line-4:hover ~ .bg {
+  transform: translateY(-393px);
+}
+
+.box .line.line-5:hover ~ .bg {
+  transform: translateY(-391px);
+}
+
+.box .line.line-6:hover ~ .bg {
+  transform: translateY(-389px);
+}
+
+.box .line.line-7:hover ~ .bg {
+  transform: translateY(-387px);
+}
+
+.box .line.line-8:hover ~ .bg {
+  transform: translateY(-385px);
+}
+
+.box .line.line-9:hover ~ .bg {
+  transform: translateY(-383px);
+}
+
+.box .line.line-10:hover ~ .bg {
+  transform: translateY(-381px);
+}
+
+.box .line.line-11:hover ~ .bg {
+  transform: translateY(-379px);
+}
+
+.box .line.line-12:hover ~ .bg {
+  transform: translateY(-377px);
+}
+
+.box .line.line-13:hover ~ .bg {
+  transform: translateY(-375px);
+}
+
+.box .line.line-14:hover ~ .bg {
+  transform: translateY(-373px);
+}
+
+.box .line.line-15:hover ~ .bg {
+  transform: translateY(-371px);
+}
+
+.box .line.line-16:hover ~ .bg {
+  transform: translateY(-369px);
+}
+
+.box .line.line-17:hover ~ .bg {
+  transform: translateY(-367px);
+}
+
+.box .line.line-18:hover ~ .bg {
+  transform: translateY(-365px);
+}
+
+.box .line.line-19:hover ~ .bg {
+  transform: translateY(-363px);
+}
+
+.box .line.line-20:hover ~ .bg {
+  transform: translateY(-361px);
+}
+
+.box .line.line-21:hover ~ .bg {
+  transform: translateY(-359px);
+}
+
+.box .line.line-22:hover ~ .bg {
+  transform: translateY(-357px);
+}
+
+.box .line.line-23:hover ~ .bg {
+  transform: translateY(-355px);
+}
+
+.box .line.line-24:hover ~ .bg {
+  transform: translateY(-353px);
+}
+
+.box .line.line-25:hover ~ .bg {
+  transform: translateY(-351px);
+}
+
+.box .line.line-26:hover ~ .bg {
+  transform: translateY(-349px);
+}
+
+.box .line.line-27:hover ~ .bg {
+  transform: translateY(-347px);
+}
+
+.box .line.line-28:hover ~ .bg {
+  transform: translateY(-345px);
+}
+
+.box .line.line-29:hover ~ .bg {
+  transform: translateY(-343px);
+}
+
+.box .line.line-30:hover ~ .bg {
+  transform: translateY(-341px);
+}
+
+.box .line.line-31:hover ~ .bg {
+  transform: translateY(-339px);
+}
+
+.box .line.line-32:hover ~ .bg {
+  transform: translateY(-337px);
+}
+
+.box .line.line-33:hover ~ .bg {
+  transform: translateY(-335px);
+}
+
+.box .line.line-34:hover ~ .bg {
+  transform: translateY(-333px);
+}
+
+.box .line.line-35:hover ~ .bg {
+  transform: translateY(-331px);
+}
+
+.box .line.line-36:hover ~ .bg {
+  transform: translateY(-329px);
+}
+
+.box .line.line-37:hover ~ .bg {
+  transform: translateY(-327px);
+}
+
+.box .line.line-38:hover ~ .bg {
+  transform: translateY(-325px);
+}
+
+.box .line.line-39:hover ~ .bg {
+  transform: translateY(-323px);
+}
+
+.box .line.line-40:hover ~ .bg {
+  transform: translateY(-321px);
+}
+
+.box .line.line-41:hover ~ .bg {
+  transform: translateY(-319px);
+}
+
+.box .line.line-42:hover ~ .bg {
+  transform: translateY(-317px);
+}
+
+.box .line.line-43:hover ~ .bg {
+  transform: translateY(-315px);
+}
+
+.box .line.line-44:hover ~ .bg {
+  transform: translateY(-313px);
+}
+
+.box .line.line-45:hover ~ .bg {
+  transform: translateY(-311px);
+}
+
+.box .line.line-46:hover ~ .bg {
+  transform: translateY(-309px);
+}
+
+.box .line.line-47:hover ~ .bg {
+  transform: translateY(-307px);
+}
+
+.box .line.line-48:hover ~ .bg {
+  transform: translateY(-305px);
+}
+
+.box .line.line-49:hover ~ .bg {
+  transform: translateY(-303px);
+}
+
+.box .line.line-50:hover ~ .bg {
+  transform: translateY(-301px);
+}
+
+.box .line.line-51:hover ~ .bg {
+  transform: translateY(-299px);
+}
+
+.box .line.line-52:hover ~ .bg {
+  transform: translateY(-297px);
+}
+
+.box .line.line-53:hover ~ .bg {
+  transform: translateY(-295px);
+}
+
+.box .line.line-54:hover ~ .bg {
+  transform: translateY(-293px);
+}
+
+.box .line.line-55:hover ~ .bg {
+  transform: translateY(-291px);
+}
+
+.box .line.line-56:hover ~ .bg {
+  transform: translateY(-289px);
+}
+
+.box .line.line-57:hover ~ .bg {
+  transform: translateY(-287px);
+}
+
+.box .line.line-58:hover ~ .bg {
+  transform: translateY(-285px);
+}
+
+.box .line.line-59:hover ~ .bg {
+  transform: translateY(-283px);
+}
+
+.box .line.line-60:hover ~ .bg {
+  transform: translateY(-281px);
+}
+
+.box .line.line-61:hover ~ .bg {
+  transform: translateY(-279px);
+}
+
+.box .line.line-62:hover ~ .bg {
+  transform: translateY(-277px);
+}
+
+.box .line.line-63:hover ~ .bg {
+  transform: translateY(-275px);
+}
+
+.box .line.line-64:hover ~ .bg {
+  transform: translateY(-273px);
+}
+
+.box .line.line-65:hover ~ .bg {
+  transform: translateY(-271px);
+}
+
+.box .line.line-66:hover ~ .bg {
+  transform: translateY(-269px);
+}
+
+.box .line.line-67:hover ~ .bg {
+  transform: translateY(-267px);
+}
+
+.box .line.line-68:hover ~ .bg {
+  transform: translateY(-265px);
+}
+
+.box .line.line-69:hover ~ .bg {
+  transform: translateY(-263px);
+}
+
+.box .line.line-70:hover ~ .bg {
+  transform: translateY(-261px);
+}
+
+.box .line.line-71:hover ~ .bg {
+  transform: translateY(-259px);
+}
+
+.box .line.line-72:hover ~ .bg {
+  transform: translateY(-257px);
+}
+
+.box .line.line-73:hover ~ .bg {
+  transform: translateY(-255px);
+}
+
+.box .line.line-74:hover ~ .bg {
+  transform: translateY(-253px);
+}
+
+.box .line.line-75:hover ~ .bg {
+  transform: translateY(-251px);
+}
+
+.box .line.line-76:hover ~ .bg {
+  transform: translateY(-249px);
+}
+
+.box .line.line-77:hover ~ .bg {
+  transform: translateY(-247px);
+}
+
+.box .line.line-78:hover ~ .bg {
+  transform: translateY(-245px);
+}
+
+.box .line.line-79:hover ~ .bg {
+  transform: translateY(-243px);
+}
+
+.box .line.line-80:hover ~ .bg {
+  transform: translateY(-241px);
+}
+
+.box .line.line-81:hover ~ .bg {
+  transform: translateY(-239px);
+}
+
+.box .line.line-82:hover ~ .bg {
+  transform: translateY(-237px);
+}
+
+.box .line.line-83:hover ~ .bg {
+  transform: translateY(-235px);
+}
+
+.box .line.line-84:hover ~ .bg {
+  transform: translateY(-233px);
+}
+
+.box .line.line-85:hover ~ .bg {
+  transform: translateY(-231px);
+}
+
+.box .line.line-86:hover ~ .bg {
+  transform: translateY(-229px);
+}
+
+.box .line.line-87:hover ~ .bg {
+  transform: translateY(-227px);
+}
+
+.box .line.line-88:hover ~ .bg {
+  transform: translateY(-225px);
+}
+
+.box .line.line-89:hover ~ .bg {
+  transform: translateY(-223px);
+}
+
+.box .line.line-90:hover ~ .bg {
+  transform: translateY(-221px);
+}
+
+.box .line.line-91:hover ~ .bg {
+  transform: translateY(-219px);
+}
+
+.box .line.line-92:hover ~ .bg {
+  transform: translateY(-217px);
+}
+
+.box .line.line-93:hover ~ .bg {
+  transform: translateY(-215px);
+}
+
+.box .line.line-94:hover ~ .bg {
+  transform: translateY(-213px);
+}
+
+.box .line.line-95:hover ~ .bg {
+  transform: translateY(-211px);
+}
+
+.box .line.line-96:hover ~ .bg {
+  transform: translateY(-209px);
+}
+
+.box .line.line-97:hover ~ .bg {
+  transform: translateY(-207px);
+}
+
+.box .line.line-98:hover ~ .bg {
+  transform: translateY(-205px);
+}
+
+.box .line.line-99:hover ~ .bg {
+  transform: translateY(-203px);
+}
+
+.box .line.line-100:hover ~ .bg {
+  transform: translateY(-201px);
+}
+
+.box .line.line-101:hover ~ .bg {
+  transform: translateY(-199px);
+}
+
+.box .line.line-102:hover ~ .bg {
+  transform: translateY(-197px);
+}
+
+.box .line.line-103:hover ~ .bg {
+  transform: translateY(-195px);
+}
+
+.box .line.line-104:hover ~ .bg {
+  transform: translateY(-193px);
+}
+
+.box .line.line-105:hover ~ .bg {
+  transform: translateY(-191px);
+}
+
+.box .line.line-106:hover ~ .bg {
+  transform: translateY(-189px);
+}
+
+.box .line.line-107:hover ~ .bg {
+  transform: translateY(-187px);
+}
+
+.box .line.line-108:hover ~ .bg {
+  transform: translateY(-185px);
+}
+
+.box .line.line-109:hover ~ .bg {
+  transform: translateY(-183px);
+}
+
+.box .line.line-110:hover ~ .bg {
+  transform: translateY(-181px);
+}
+
+.box .line.line-111:hover ~ .bg {
+  transform: translateY(-179px);
+}
+
+.box .line.line-112:hover ~ .bg {
+  transform: translateY(-177px);
+}
+
+.box .line.line-113:hover ~ .bg {
+  transform: translateY(-175px);
+}
+
+.box .line.line-114:hover ~ .bg {
+  transform: translateY(-173px);
+}
+
+.box .line.line-115:hover ~ .bg {
+  transform: translateY(-171px);
+}
+
+.box .line.line-116:hover ~ .bg {
+  transform: translateY(-169px);
+}
+
+.box .line.line-117:hover ~ .bg {
+  transform: translateY(-167px);
+}
+
+.box .line.line-118:hover ~ .bg {
+  transform: translateY(-165px);
+}
+
+.box .line.line-119:hover ~ .bg {
+  transform: translateY(-163px);
+}
+
+.box .line.line-120:hover ~ .bg {
+  transform: translateY(-161px);
+}
+
+.box .line.line-121:hover ~ .bg {
+  transform: translateY(-159px);
+}
+
+.box .line.line-122:hover ~ .bg {
+  transform: translateY(-157px);
+}
+
+.box .line.line-123:hover ~ .bg {
+  transform: translateY(-155px);
+}
+
+.box .line.line-124:hover ~ .bg {
+  transform: translateY(-153px);
+}
+
+.box .line.line-125:hover ~ .bg {
+  transform: translateY(-151px);
+}
+
+.box .line.line-126:hover ~ .bg {
+  transform: translateY(-149px);
+}
+
+.box .line.line-127:hover ~ .bg {
+  transform: translateY(-147px);
+}
+
+.box .line.line-128:hover ~ .bg {
+  transform: translateY(-145px);
+}
+
+.box .line.line-129:hover ~ .bg {
+  transform: translateY(-143px);
+}
+
+.box .line.line-130:hover ~ .bg {
+  transform: translateY(-141px);
+}
+
+.box .line.line-131:hover ~ .bg {
+  transform: translateY(-139px);
+}
+
+.box .line.line-132:hover ~ .bg {
+  transform: translateY(-137px);
+}
+
+.box .line.line-133:hover ~ .bg {
+  transform: translateY(-135px);
+}
+
+.box .line.line-134:hover ~ .bg {
+  transform: translateY(-133px);
+}
+
+.box .line.line-135:hover ~ .bg {
+  transform: translateY(-131px);
+}
+
+.box .line.line-136:hover ~ .bg {
+  transform: translateY(-129px);
+}
+
+.box .line.line-137:hover ~ .bg {
+  transform: translateY(-127px);
+}
+
+.box .line.line-138:hover ~ .bg {
+  transform: translateY(-125px);
+}
+
+.box .line.line-139:hover ~ .bg {
+  transform: translateY(-123px);
+}
+
+.box .line.line-140:hover ~ .bg {
+  transform: translateY(-121px);
+}
+
+.box .line.line-141:hover ~ .bg {
+  transform: translateY(-119px);
+}
+
+.box .line.line-142:hover ~ .bg {
+  transform: translateY(-117px);
+}
+
+.box .line.line-143:hover ~ .bg {
+  transform: translateY(-115px);
+}
+
+.box .line.line-144:hover ~ .bg {
+  transform: translateY(-113px);
+}
+
+.box .line.line-145:hover ~ .bg {
+  transform: translateY(-111px);
+}
+
+.box .line.line-146:hover ~ .bg {
+  transform: translateY(-109px);
+}
+
+.box .line.line-147:hover ~ .bg {
+  transform: translateY(-107px);
+}
+
+.box .line.line-148:hover ~ .bg {
+  transform: translateY(-105px);
+}
+
+.box .line.line-149:hover ~ .bg {
+  transform: translateY(-103px);
+}
+
+.box .line.line-150:hover ~ .bg {
+  transform: translateY(-101px);
+}
+
+.box .line.line-151:hover ~ .bg {
+  transform: translateY(-99px);
+}
+
+.box .line.line-152:hover ~ .bg {
+  transform: translateY(-97px);
+}
+
+.box .line.line-153:hover ~ .bg {
+  transform: translateY(-95px);
+}
+
+.box .line.line-154:hover ~ .bg {
+  transform: translateY(-93px);
+}
+
+.box .line.line-155:hover ~ .bg {
+  transform: translateY(-91px);
+}
+
+.box .line.line-156:hover ~ .bg {
+  transform: translateY(-89px);
+}
+
+.box .line.line-157:hover ~ .bg {
+  transform: translateY(-87px);
+}
+
+.box .line.line-158:hover ~ .bg {
+  transform: translateY(-85px);
+}
+
+.box .line.line-159:hover ~ .bg {
+  transform: translateY(-83px);
+}
+
+.box .line.line-160:hover ~ .bg {
+  transform: translateY(-81px);
+}
+
+.box .line.line-161:hover ~ .bg {
+  transform: translateY(-79px);
+}
+
+.box .line.line-162:hover ~ .bg {
+  transform: translateY(-77px);
+}
+
+.box .line.line-163:hover ~ .bg {
+  transform: translateY(-75px);
+}
+
+.box .line.line-164:hover ~ .bg {
+  transform: translateY(-73px);
+}
+
+.box .line.line-165:hover ~ .bg {
+  transform: translateY(-71px);
+}
+
+.box .line.line-166:hover ~ .bg {
+  transform: translateY(-69px);
+}
+
+.box .line.line-167:hover ~ .bg {
+  transform: translateY(-67px);
+}
+
+.box .line.line-168:hover ~ .bg {
+  transform: translateY(-65px);
+}
+
+.box .line.line-169:hover ~ .bg {
+  transform: translateY(-63px);
+}
+
+.box .line.line-170:hover ~ .bg {
+  transform: translateY(-61px);
+}
+
+.box .line.line-171:hover ~ .bg {
+  transform: translateY(-59px);
+}
+
+.box .line.line-172:hover ~ .bg {
+  transform: translateY(-57px);
+}
+
+.box .line.line-173:hover ~ .bg {
+  transform: translateY(-55px);
+}
+
+.box .line.line-174:hover ~ .bg {
+  transform: translateY(-53px);
+}
+
+.box .line.line-175:hover ~ .bg {
+  transform: translateY(-51px);
+}
+
+.box .line.line-176:hover ~ .bg {
+  transform: translateY(-49px);
+}
+
+.box .line.line-177:hover ~ .bg {
+  transform: translateY(-47px);
+}
+
+.box .line.line-178:hover ~ .bg {
+  transform: translateY(-45px);
+}
+
+.box .line.line-179:hover ~ .bg {
+  transform: translateY(-43px);
+}
+
+.box .line.line-180:hover ~ .bg {
+  transform: translateY(-41px);
+}
+
+.box .line.line-181:hover ~ .bg {
+  transform: translateY(-39px);
+}
+
+.box .line.line-182:hover ~ .bg {
+  transform: translateY(-37px);
+}
+
+.box .line.line-183:hover ~ .bg {
+  transform: translateY(-35px);
+}
+
+.box .line.line-184:hover ~ .bg {
+  transform: translateY(-33px);
+}
+
+.box .line.line-185:hover ~ .bg {
+  transform: translateY(-31px);
+}
+
+.box .line.line-186:hover ~ .bg {
+  transform: translateY(-29px);
+}
+
+.box .line.line-187:hover ~ .bg {
+  transform: translateY(-27px);
+}
+
+.box .line.line-188:hover ~ .bg {
+  transform: translateY(-25px);
+}
+
+.box .line.line-189:hover ~ .bg {
+  transform: translateY(-23px);
+}
+
+.box .line.line-190:hover ~ .bg {
+  transform: translateY(-21px);
+}
+
+.box .line.line-191:hover ~ .bg {
+  transform: translateY(-19px);
+}
+
+.box .line.line-192:hover ~ .bg {
+  transform: translateY(-17px);
+}
+
+.box .line.line-193:hover ~ .bg {
+  transform: translateY(-15px);
+}
+
+.box .line.line-194:hover ~ .bg {
+  transform: translateY(-13px);
+}
+
+.box .line.line-195:hover ~ .bg {
+  transform: translateY(-11px);
+}
+
+.box .line.line-196:hover ~ .bg {
+  transform: translateY(-9px);
+}
+
+.box .line.line-197:hover ~ .bg {
+  transform: translateY(-7px);
+}
+
+.box .line.line-198:hover ~ .bg {
+  transform: translateY(-5px);
+}
+
+.box .line.line-199:hover ~ .bg {
+  transform: translateY(-3px);
+}
+
+.box .line.line-200:hover ~ .bg {
+  transform: translateY(-1px);
+}
+/*# sourceMappingURL=style.css.map */

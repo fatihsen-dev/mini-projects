@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .box {
+  background: #444;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+body .box .clock {
+  width: 240px;
+  height: 240px;
+  background: #222;
+  border-radius: 100%;
+  border: 8px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .box .clock .svg {
+  position: absolute;
+  width: 219px;
+  height: 219px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .box .clock .svg svg:nth-of-type(1) {
+  height: 100%;
+  width: 100%;
+  transform: rotate(-90deg);
+}
+
+body .box .clock .svg svg:nth-of-type(1) .elipse-1 {
+  height: 100%;
+  width: 100%;
+  fill: transparent;
+  stroke: #F85B5B;
+  stroke-width: 6px;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+  stroke-dasharray: 390;
+  stroke-dashoffset: 390;
+  stroke-linecap: butt;
+  animation: elipse 5s linear infinite;
+  position: absolute;
+}
+
+@keyframes elipse {
+  to {
+    stroke-dashoffset: -390;
+  }
+}
+
+body .box .clock .svg svg:nth-of-type(2) {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+body .box .clock .svg svg:nth-of-type(2) .elipse-1 {
+  height: 100%;
+  width: 100%;
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 6px;
+  stroke-miterlimit: 10;
+  stroke-width: 1;
+  stroke-dasharray: 3;
+  stroke-linecap: butt;
+  position: absolute;
+}
+
+body .box .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+}
+
+body .box .text > span:nth-of-type(1) {
+  font-size: 14px;
+  transform: translate(0px, 12px);
+}
+
+body .box .text > span:nth-of-type(2) {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+body .box .text .heard-text {
+  width: 110px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .box .text .heard-text > span:nth-of-type(1) {
+  transform: translate(4px, 0);
+}
+
+body .box .text .heard-text > span:nth-of-type(1) i {
+  font-size: 12px;
+  color: #F85B5B;
+  margin-right: 2px;
+  animation: heard .5s alternate infinite;
+  transform: scale(0.8);
+}
+
+@keyframes heard {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+body .box .border {
+  position: absolute;
+  padding: 100px;
+  border-radius: 100%;
+  border: 2px dotted #fff;
+}
+/*# sourceMappingURL=style.css.map */

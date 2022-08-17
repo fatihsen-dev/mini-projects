@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+}
+
+.box .t {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.box .t.r-0:hover ~ .d {
+  top: -20px;
+}
+
+.box .t.r-1:hover ~ .d {
+  top: 0px;
+}
+
+.box .t.r-2:hover ~ .d {
+  top: 20px;
+}
+
+.box .t.r-3:hover ~ .d {
+  top: 40px;
+}
+
+.box .t.r-4:hover ~ .d {
+  top: 60px;
+}
+
+.box .t.r-5:hover ~ .d {
+  top: 80px;
+}
+
+.box .t.r-6:hover ~ .d {
+  top: 100px;
+}
+
+.box .t.r-7:hover ~ .d {
+  top: 120px;
+}
+
+.box .t.r-8:hover ~ .d {
+  top: 140px;
+}
+
+.box .t.r-9:hover ~ .d {
+  top: 160px;
+}
+
+.box .t.r-10:hover ~ .d {
+  top: 180px;
+}
+
+.box .t.r-11:hover ~ .d {
+  top: 200px;
+}
+
+.box .t.r-12:hover ~ .d {
+  top: 220px;
+}
+
+.box .t.r-13:hover ~ .d {
+  top: 240px;
+}
+
+.box .t.r-14:hover ~ .d {
+  top: 260px;
+}
+
+.box .t.r-15:hover ~ .d {
+  top: 280px;
+}
+
+.box .t.r-16:hover ~ .d {
+  top: 300px;
+}
+
+.box .t.r-17:hover ~ .d {
+  top: 320px;
+}
+
+.box .t.r-18:hover ~ .d {
+  top: 340px;
+}
+
+.box .t.r-19:hover ~ .d {
+  top: 360px;
+}
+
+.box .t.r-20:hover ~ .d {
+  top: 380px;
+}
+
+.box .t.c-0:hover ~ .d {
+  left: -20px;
+}
+
+.box .t.c-1:hover ~ .d {
+  left: 0px;
+}
+
+.box .t.c-2:hover ~ .d {
+  left: 20px;
+}
+
+.box .t.c-3:hover ~ .d {
+  left: 40px;
+}
+
+.box .t.c-4:hover ~ .d {
+  left: 60px;
+}
+
+.box .t.c-5:hover ~ .d {
+  left: 80px;
+}
+
+.box .t.c-6:hover ~ .d {
+  left: 100px;
+}
+
+.box .t.c-7:hover ~ .d {
+  left: 120px;
+}
+
+.box .t.c-8:hover ~ .d {
+  left: 140px;
+}
+
+.box .t.c-9:hover ~ .d {
+  left: 160px;
+}
+
+.box .t.c-10:hover ~ .d {
+  left: 180px;
+}
+
+.box .t.c-11:hover ~ .d {
+  left: 200px;
+}
+
+.box .t.c-12:hover ~ .d {
+  left: 220px;
+}
+
+.box .t.c-13:hover ~ .d {
+  left: 240px;
+}
+
+.box .t.c-14:hover ~ .d {
+  left: 260px;
+}
+
+.box .t.c-15:hover ~ .d {
+  left: 280px;
+}
+
+.box .t.c-16:hover ~ .d {
+  left: 300px;
+}
+
+.box .t.c-17:hover ~ .d {
+  left: 320px;
+}
+
+.box .t.c-18:hover ~ .d {
+  left: 340px;
+}
+
+.box .t.c-19:hover ~ .d {
+  left: 360px;
+}
+
+.box .t.c-20:hover ~ .d {
+  left: 380px;
+}
+
+.box .d {
+  width: 20px;
+  height: 20px;
+  background: gold;
+  border-radius: 100%;
+  position: absolute;
+  top: 190px;
+  left: 190px;
+  transition: 0.1s linear;
+  pointer-events: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .d::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: inherit;
+  border: 1px solid gold;
+  animation: scale 1s linear infinite 0.5s;
+}
+
+@keyframes scale {
+  to {
+    transform: scale(2.3);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

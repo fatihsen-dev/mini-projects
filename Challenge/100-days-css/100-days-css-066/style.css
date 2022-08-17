@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+  z-index: 1;
+}
+
+.box input[id="btn"] {
+  display: none;
+}
+
+.box input[id="btn"]:checked ~ .btn {
+  border: 14px solid #fff;
+  background: green;
+}
+
+.box input[id="btn"]:checked ~ .scale {
+  animation: afterAnimate .3s ease-in-out forwards .1s;
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes afterAnimate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+.box .btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 100%;
+  transition: 0.2s ease-in-out;
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.box .scale {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.box .scale .line {
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  background: transparent;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .scale .line::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 1px;
+  background: #fff;
+  top: 0;
+}
+
+.box .scale .line.line-0 {
+  transform: rotate(0deg);
+}
+
+.box .scale .line.line-1 {
+  transform: rotate(30deg);
+}
+
+.box .scale .line.line-2 {
+  transform: rotate(60deg);
+}
+
+.box .scale .line.line-3 {
+  transform: rotate(90deg);
+}
+
+.box .scale .line.line-4 {
+  transform: rotate(120deg);
+}
+
+.box .scale .line.line-5 {
+  transform: rotate(150deg);
+}
+
+.box .scale .line.line-6 {
+  transform: rotate(180deg);
+}
+
+.box .scale .line.line-7 {
+  transform: rotate(210deg);
+}
+
+.box .scale .line.line-8 {
+  transform: rotate(240deg);
+}
+
+.box .scale .line.line-9 {
+  transform: rotate(270deg);
+}
+
+.box .scale .line.line-10 {
+  transform: rotate(300deg);
+}
+
+.box .scale .line.line-11 {
+  transform: rotate(330deg);
+}
+
+.box .scale .line.line-12 {
+  transform: rotate(360deg);
+}
+/*# sourceMappingURL=style.css.map */

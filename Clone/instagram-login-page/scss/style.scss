@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+@keyframes phoneimage{
+  0%{
+    background: url(../img/1.jpg);
+  }
+  10%{
+    background: url(../img/2.jpg);
+  }
+  30%{
+    background: url(../img/3.jpg);
+  }
+  60%{
+    background: url(../img/4.jpg);
+  }
+  80%{
+    background: url(../img/5.jpg);
+  }
+  100%{
+    background: url(../img/1.jpg);
+  }
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #FAFAFA;
+}
+.container{
+  min-height: 730px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  & .box{
+    width: 935px;
+    min-width: 935px;
+    height: 754px;
+    min-height: 754px;
+    margin: 32px auto 0;
+    display: flex;
+    align-items: center;
+    margin: 0px 0 0 94px;
+    & .phone{
+      position: relative;
+      width: 404px;
+      height: 618px;
+      
+      & .gallery{
+        width: 240px;
+        height: 427px;
+        background: url(../img/1.jpg) no-repeat;
+        position: absolute;
+        left: 151px;
+        top: 100px;
+        animation: phoneimage 20s cubic-bezier(0,-1.65,1,1.95) infinite;
+      }
+    }
+    & .login-container{
+      width: 350px;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 34px;
+      margin-top: 12px;
+      & .login{
+        width: 350px;
+        height: 380px;
+        background: white;
+        border: 1px solid #ddd;
+        margin: 0 0 10px;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1px;
+        & .instagram-text-logo{
+          width: 176px;
+          margin-top: 24px;
+          margin-bottom: 36px;
+        }
+        & .input1,.input2{
+          width: 268px;
+          height: 36px;
+          padding: 9px 0 7px 8px;
+          border: 1px solid rgba(204, 204, 204, 0.65);
+          outline: none;
+          background: #FAFAFA;
+          border-radius: .25em;
+          font-size: 12px;
+          margin-bottom: 7px;
+          &::placeholder{
+            color: rgb(153, 153, 153);
+            font-size: .78rem;
+          }
+        }
+        & button{
+          width: 270px;
+          height: 30px;
+          border: none;
+          background: #B2DFFC;
+          color: white;
+          border-radius: 4px;
+          font-size: 14px;
+          font-weight: 500;
+          margin-top: 8px ;
+        }
+        & .or{
+          width: 270px;
+          margin-top: 10px;
+          height: 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 13px;
+          font-weight: 500;
+          color: rgb(153, 153, 153);
+          & span{
+            display: block;
+            width: 110px;
+            height: 1px;
+            background: #ccc;
+          }
+        }
+        .facebook{
+          display: flex;
+          justify-content: center;
+          align-items:center ;
+          width: 270px;
+          height: 20px;
+          color: #385185;
+          font-weight: 500;
+          font-size: 14px;
+          margin-top: 20px;
+          & img{
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+          }
+          &:active{
+            opacity: .5;
+          }
+        }
+        & .forget{
+          font-size: 12px;
+          color: #385185;
+          margin-top: 20px;
+
+          &:active{
+            opacity: .5;
+          }
+        }
+
+      }
+      & .signup{
+        width: 350px;
+        height: 63px;
+        margin: 0 0 10px;
+        padding: 10px 0;
+        background: white;
+        border: 1px solid #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & span{
+          font-size: 14px;
+          color: #262626;
+          & a{
+            margin-left: 4px;
+            color: #0095f6;
+            font-weight: 500;
+            &:active{
+              opacity: .5;
+            }
+          }
+        }
+      }
+      & .apps{
+        width: 350px;
+        height: 102px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        & span{
+          display: block;
+          position: absolute;
+          top: 10px;
+          font-size: 14px;
+        }
+        & .img1{
+          width: 140px;
+          margin: 10px 5px;
+          cursor: pointer;
+        }
+        & .img2{
+          width: 140px;
+          margin: 10px 5px;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}
+.footer{
+  min-height: 151px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  & a{
+    font-size: 12px;
+    color: #8e8e8e;
+    margin: 6px;
+    &:active{
+      color: #ccc;
+    }
+  }
+  & .three{
+    margin-top: 12px;
+  }
+}

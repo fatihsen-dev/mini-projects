@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #2196f3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.box .bg {
+  width: 100%;
+  height: 100%;
+}
+
+.box .bg svg {
+  fill: #1f8de4;
+}
+
+.box .icon {
+  position: absolute;
+  perspective: 300px;
+  transform: rotateY(0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.box .icon svg {
+  fill: #ffcc30;
+}
+
+.box .icon .ghost {
+  width: 20px;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  border-radius: 100%;
+  transform: translate(14px, 3px) scale(1);
+  animation: ghost 2s linear infinite;
+}
+
+@keyframes ghost {
+  0%,
+  100% {
+    transform: translate(14px, 3px) scale(1);
+  }
+  50% {
+    transform: translate(14px, 3px) scale(1.5);
+  }
+}
+
+.box .popup {
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  width: 240px;
+  height: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #444;
+  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transform: perspective(600px) rotateY(90deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.box .popup img {
+  width: 100%;
+}
+
+.box .popup .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.box .popup .text .text-1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.box .popup .button {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-around;
+  color: #1f8de4;
+}
+
+.box .popup .button span {
+  cursor: pointer;
+}
+
+.box input[type="checkbox"] {
+  display: none;
+}
+
+.box input[type="checkbox"]:checked ~ .icon {
+  transform: rotateY(91deg);
+}
+
+.box input[type="checkbox"]:checked ~ .popup {
+  transform: perspective(600px) rotateY(0deg);
+  opacity: 1;
+  pointer-events: all;
+  transition: all 0.5s ease 0.4s;
+}
+/*# sourceMappingURL=style.css.map */

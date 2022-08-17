@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="card-number-container">
+      <label for="card-number">Card Number</label>
+      <input type="number" name="card-number" id="cardnumber">
+    </div>
+    <div class="card-holders-container">
+      <label for="card-holders">Card Holders</label>
+      <input type="text" name="card-holders" id="cardholders">
+    </div>
+    <div class="date-container">
+      <div class="month-container">
+        <span>Expiration Date</span>
+        <select name="month-select" id="month-select">
+          <option class="optionGroup" selected disabled>Month</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+      <div class="year-container">
+        <select name="year-select" id="year-select">
+          <option class="optionGroup" selected disabled>Year</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+        </select>
+      </div>
+      <div class="cw-container">
+        <label for="cw">CW</label>
+        <input type="number" name="cw" id="cw">
+        <div class="card-container">
+          <div class="card-front">
+            <div class="logo">
+              <img src="images/chip.png" alt="">
+              <img src="images/visa.png" alt="">
+            </div>
+            <input type="radio" name="radio" id="card-number">
+            <label for="card-number" class="card-number">#### #### #### ####</label>
+            <div class="full-name-month-year">
+              <input type="radio" name="radio" id="full-name">
+              <label for="full-name" class="full-name">
+                <span>Card Holder</span>
+                <p>FULL NAME</p>
+              </label>
+              <input type="radio" name="radio" id="month-year">
+              <label for="month-year" class="month-year">
+                <span>Expires</span>
+                <p>MM / YY</p>
+              </label>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-top"></div>
+            <div class="cw-container-2">
+              <span>CW</span>
+              <div class="cw-box"></div>
+            </div>
+            <div class="logo"><img src="images/visa.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input class="submit-button" type="submit" value="Submit">
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

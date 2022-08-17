@@ -1,0 +1,347 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #42A7A1;
+  position: relative;
+}
+
+.box .card {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box .card .top {
+  width: inherit;
+  height: 60px;
+  background: #F1BA64;
+  padding: 6px 10px;
+  border-radius: 3px 3px 0 0;
+}
+
+.box .card .top .text-1, .box .card .top .text-2 {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .card .top .text-1 {
+  align-items: flex-end;
+}
+
+.box .card .top .text-1 .text-1-span-1 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.box .card .top .text-1 .text-1-span-2 {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.box .card .top .text-2 .text-2-span-1 {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.box .card .top .text-2 .text-2-span-2 {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.box .card .bottom {
+  width: inherit;
+  height: 160px;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box .card .bottom .one {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.box .card .bottom .one .color-r, .box .card .bottom .one .color-b {
+  font-size: 10px;
+  color: #666;
+}
+
+.box .card .bottom .one .color-r {
+  margin-right: 30px;
+  position: relative;
+}
+
+.box .card .bottom .one .color-r::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background: #FA7373;
+  left: -20px;
+  top: 50%;
+  border-radius: 6px;
+}
+
+.box .card .bottom .one .color-b {
+  margin-right: 10px;
+  position: relative;
+}
+
+.box .card .bottom .one .color-b::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background: #7BA2FF;
+  left: -20px;
+  top: 50%;
+  border-radius: 6px;
+}
+
+.box .card .bottom .two {
+  width: inherit;
+  height: 88px;
+}
+
+.box .card .bottom .two .dot-list-red, .box .card .bottom .two .dot-list-blue {
+  height: 50%;
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot, .box .card .bottom .two .dot-list-red .blue-dot, .box .card .bottom .two .dot-list-blue .red-dot, .box .card .bottom .two .dot-list-blue .blue-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot::after, .box .card .bottom .two .dot-list-red .blue-dot::after, .box .card .bottom .two .dot-list-blue .red-dot::after, .box .card .bottom .two .dot-list-blue .blue-dot::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  cursor: default;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot .popup, .box .card .bottom .two .dot-list-red .blue-dot .popup, .box .card .bottom .two .dot-list-blue .red-dot .popup, .box .card .bottom .two .dot-list-blue .blue-dot .popup {
+  transform: translate(-30%, -16px);
+  background: #FA7373;
+  color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+  position: absolute;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  opacity: 0;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot .popup::after, .box .card .bottom .two .dot-list-red .blue-dot .popup::after, .box .card .bottom .two .dot-list-blue .red-dot .popup::after, .box .card .bottom .two .dot-list-blue .blue-dot .popup::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FA7373;
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot:hover > .popup, .box .card .bottom .two .dot-list-red .blue-dot:hover > .popup, .box .card .bottom .two .dot-list-blue .red-dot:hover > .popup, .box .card .bottom .two .dot-list-blue .blue-dot:hover > .popup {
+  opacity: 1;
+  transform: translate(-30%, -20px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot > .popup, .box .card .bottom .two .dot-list-blue .blue-dot > .popup {
+  background: #7BA2FF;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot > .popup::after, .box .card .bottom .two .dot-list-blue .blue-dot > .popup::after {
+  background: #7BA2FF;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot, .box .card .bottom .two .dot-list-blue .red-dot {
+  background: #FA7373;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot::after, .box .card .bottom .two .dot-list-blue .red-dot::after {
+  background: #FA7373;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-1, .box .card .bottom .two .dot-list-blue .red-dot-1 {
+  transform: translate(0, 20px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-2, .box .card .bottom .two .dot-list-blue .red-dot-2 {
+  transform: translate(0, -10px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-3, .box .card .bottom .two .dot-list-blue .red-dot-3 {
+  transform: translate(0, 2px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-4, .box .card .bottom .two .dot-list-blue .red-dot-4 {
+  transform: translate(0, -6px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-5, .box .card .bottom .two .dot-list-blue .red-dot-5 {
+  transform: translate(0, 14px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-6, .box .card .bottom .two .dot-list-blue .red-dot-6 {
+  transform: translate(0, 22px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-7, .box .card .bottom .two .dot-list-blue .red-dot-7 {
+  transform: translate(0, -2px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot, .box .card .bottom .two .dot-list-blue .blue-dot {
+  background: #7BA2FF;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot::after, .box .card .bottom .two .dot-list-blue .blue-dot::after {
+  background: #7BA2FF;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-1, .box .card .bottom .two .dot-list-blue .blue-dot-1 {
+  transform: translate(0, 2px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-2, .box .card .bottom .two .dot-list-blue .blue-dot-2 {
+  transform: translate(0, -8px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-3, .box .card .bottom .two .dot-list-blue .blue-dot-3 {
+  transform: translate(0, 6px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-4, .box .card .bottom .two .dot-list-blue .blue-dot-4 {
+  transform: translate(0, -2px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-5, .box .card .bottom .two .dot-list-blue .blue-dot-5 {
+  transform: translate(0, 2px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-6, .box .card .bottom .two .dot-list-blue .blue-dot-6 {
+  transform: translate(0, 6px);
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-7, .box .card .bottom .two .dot-list-blue .blue-dot-7 {
+  transform: translate(0, -2px);
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-1::after, .box .card .bottom .two .dot-list-blue .red-dot-1::after {
+  transform: rotate(-38deg) translate(10px, -13px);
+  width: 50px;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-2::after, .box .card .bottom .two .dot-list-blue .red-dot-2::after {
+  transform: rotate(17deg) translate(5px, 5px);
+  width: 40px;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-3::after, .box .card .bottom .two .dot-list-blue .red-dot-3::after {
+  transform: rotate(-12deg) translate(5px, -3px);
+  width: 40px;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-4::after, .box .card .bottom .two .dot-list-blue .red-dot-4::after {
+  transform: rotate(26deg) translate(5px, 9px);
+  width: 46px;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-5::after, .box .card .bottom .two .dot-list-blue .red-dot-5::after {
+  transform: rotate(11deg) translate(1px, 4px);
+  width: 42px;
+}
+
+.box .card .bottom .two .dot-list-red .red-dot-6::after, .box .card .bottom .two .dot-list-blue .red-dot-6::after {
+  transform: rotate(-31deg) translate(4px, -10px);
+  width: 48px;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-1::after, .box .card .bottom .two .dot-list-blue .blue-dot-1::after {
+  transform: rotate(-15deg) translate(4px, -4px);
+  width: 40px;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-2::after, .box .card .bottom .two .dot-list-blue .blue-dot-2::after {
+  transform: rotate(19deg) translate(4px, 6px);
+  width: 40px;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-3::after, .box .card .bottom .two .dot-list-blue .blue-dot-3::after {
+  transform: rotate(-12deg) translate(4px, -3px);
+  width: 40px;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-4::after, .box .card .bottom .two .dot-list-blue .blue-dot-4::after {
+  transform: rotate(6deg) translate(4px, 2px);
+  width: 40px;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-5::after, .box .card .bottom .two .dot-list-blue .blue-dot-5::after {
+  transform: rotate(6deg) translate(4px, 2px);
+  width: 40px;
+}
+
+.box .card .bottom .two .dot-list-red .blue-dot-6::after, .box .card .bottom .two .dot-list-blue .blue-dot-6::after {
+  transform: rotate(-12deg) translate(4px, -3px);
+  width: 40px;
+}
+
+.box .card .bottom .three {
+  width: inherit;
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box .card .bottom .three span {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #999;
+}
+/*# sourceMappingURL=style.css.map */

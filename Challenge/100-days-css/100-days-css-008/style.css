@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .box {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: #222;
+}
+
+body .box .center {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: centerRotate 4s linear infinite;
+}
+
+body .box .center .blob {
+  position: absolute;
+}
+
+body .box .center .blob-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-1 1.8s alternate infinite;
+}
+
+body .box .center .blob-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-2 1.8s alternate infinite;
+  animation-delay: .5s;
+}
+
+body .box .center .blob-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-3 1.6s alternate infinite;
+  animation-delay: 3s;
+}
+
+body .box .center .blob-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-4 1.6s alternate infinite;
+  animation-delay: 1s;
+}
+
+body .box .center .blob-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-5 3s alternate infinite;
+  animation-delay: 2s;
+}
+
+body .box .center .blob-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-6 3s alternate infinite;
+  animation-delay: 2s;
+}
+
+body .box .center .blob-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-7 3s alternate infinite;
+  animation-delay: 2s;
+}
+
+body .box .center .blob-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blob-8 3s alternate infinite;
+  animation-delay: 1s;
+}
+
+@keyframes centerRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blob-1 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 13px);
+  }
+  100% {
+    transform: translate(0, -10px);
+  }
+}
+
+@keyframes blob-2 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(6px, -10px);
+  }
+  100% {
+    transform: translate(6px, -13px);
+  }
+}
+
+@keyframes blob-3 {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0, 150px);
+  }
+}
+
+@keyframes blob-4 {
+  from {
+    transform: translate(30px, 0);
+  }
+  to {
+    transform: translate(30px, -100px);
+  }
+}
+
+@keyframes blob-5 {
+  from {
+    transform: translate(-30px, 0);
+  }
+  to {
+    transform: translate(-30px, -170px);
+  }
+}
+
+@keyframes blob-6 {
+  from {
+    transform: translate(-30px, 0);
+  }
+  to {
+    transform: translate(-30px, 160px);
+  }
+}
+
+@keyframes blob-7 {
+  from {
+    transform: translate(0px, -30px);
+  }
+  to {
+    transform: translate(100px, -30px);
+  }
+}
+
+@keyframes blob-8 {
+  from {
+    transform: translate(0px, -30px);
+  }
+  to {
+    transform: translate(-130px, -30px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

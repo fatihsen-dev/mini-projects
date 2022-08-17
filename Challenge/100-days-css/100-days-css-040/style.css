@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 6px;
+  border: 1px solid #222;
+}
+
+.box .item {
+  width: 123px;
+  height: 124px;
+  margin: 2px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.box .item img {
+  width: 100%;
+  height: 100%;
+}
+
+.box .item.item-1 {
+  transform-origin: top left;
+}
+
+.box .item.item-2 {
+  transform-origin: top;
+}
+
+.box .item.item-3 {
+  transform-origin: top right;
+}
+
+.box .item.item-4 {
+  transform-origin: left;
+}
+
+.box .item.item-6 {
+  transform-origin: right;
+}
+
+.box .item.item-7 {
+  transform-origin: bottom left;
+}
+
+.box .item.item-8 {
+  transform-origin: bottom;
+}
+
+.box .item.item-9 {
+  transform-origin: bottom right;
+}
+
+.box input[type="checkbox"] {
+  display: none;
+}
+
+.box input[type="checkbox"].input-1:checked ~ .item-1 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-2:checked ~ .item-2 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-3:checked ~ .item-3 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-4:checked ~ .item-4 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-5:checked ~ .item-5 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-6:checked ~ .item-6 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-7:checked ~ .item-7 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-8:checked ~ .item-8 {
+  transform: scale(3.08);
+}
+
+.box input[type="checkbox"].input-9:checked ~ .item-9 {
+  transform: scale(3.08);
+}
+/*# sourceMappingURL=style.css.map */

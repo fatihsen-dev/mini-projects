@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, #28404e 0%, #1c2e38 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.box .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.box .text .text-1 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.box .text .text-2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+svg {
+  transform: rotate(270deg);
+}
+
+svg .ellipse {
+  fill: none;
+  stroke: #27e1ae;
+  stroke-dasharray: 325;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+svg .big {
+  stroke-width: 11px;
+  stroke-dashoffset: 290;
+  animation: big 1.5s linear forwards;
+}
+
+@keyframes big {
+  to {
+    stroke-dashoffset: 90;
+  }
+}
+
+.big-ellipse {
+  position: relative;
+}
+
+.big-ellipse .border {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  inset: 0;
+  border-radius: 100%;
+  border: 11px solid #1b2a33;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-ellipse .border .big-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.big-ellipse .border .big-text .text-1 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.big-ellipse .border .big-text .text-2 {
+  font-size: 14px;
+  color: #648192;
+}
+
+.small-ellipse {
+  width: 300px;
+  display: flex;
+  stroke-width: 8px;
+  justify-content: space-evenly;
+}
+
+.small-ellipse svg {
+  width: 90px;
+  background: transparent;
+  stroke-dashoffset: 290;
+}
+
+.small-ellipse .small-1,
+.small-ellipse .small-2 {
+  position: relative;
+}
+
+.small-ellipse .small-1 .border,
+.small-ellipse .small-2 .border {
+  position: absolute;
+  width: 87px;
+  height: 87px;
+  inset: 0;
+  top: 14px;
+  left: 1px;
+  border-radius: 100%;
+  border: 6px solid #1b2a33;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-ellipse .small-1 .border .small-text,
+.small-ellipse .small-2 .border .small-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.small-ellipse .small-1 .border .small-text .text-1,
+.small-ellipse .small-2 .border .small-text .text-1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.small-ellipse .small-1 .border .small-text .text-2,
+.small-ellipse .small-2 .border .small-text .text-2 {
+  font-size: 13px;
+  color: #648192;
+}
+
+.small-ellipse .small-1 svg {
+  animation: small1 1s linear forwards;
+}
+
+@keyframes small1 {
+  to {
+    stroke-dashoffset: 110;
+  }
+}
+
+.small-ellipse .small-2 svg {
+  animation: small2 .5s linear forwards;
+}
+
+@keyframes small2 {
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+/*# sourceMappingURL=style.css.map */

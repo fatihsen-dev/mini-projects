@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300,300italic);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: .3s;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  background: #4CB6DE;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.box .quote {
+  position: absolute;
+  inset: 0;
+  font-size: 80px;
+  color: #6AC2E3;
+  transform: translate(20px, 50px);
+}
+
+.box .text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  z-index: 1;
+  margin: 30px 0;
+  padding-top: 20px;
+}
+
+.box .text > span {
+  padding: 2px 6px;
+  background: #286F8A;
+  cursor: pointer;
+}
+
+.box .text > span:hover ~ .popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, calc(-50% - 120px));
+}
+
+.box .text .popup {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  height: 130px;
+  background: red;
+  left: 50%;
+  top: 50%;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, calc(-50% - 134px));
+  flex-direction: column;
+}
+
+.box .text .popup .top, .box .text .popup .bottom {
+  width: 100%;
+}
+
+.box .text .popup .top {
+  height: 30px;
+  background: #fff;
+  color: #286F8A;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.box .text .popup .top > span {
+  margin-left: 16px;
+}
+
+.box .text .popup .top i {
+  font-size: 13px;
+  transform: translate(8px, 2px);
+  cursor: pointer;
+}
+
+.box .text .popup .top i:hover {
+  transform: translate(8px, 2px) scale(1.15);
+}
+
+.box .text .popup .bottom {
+  background: #286F8A;
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.box .text .popup .bottom > span {
+  font-weight: 400;
+}
+
+.box .text .popup .bottom > span > span {
+  font-weight: 600;
+}
+
+.box .text .popup::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #286F8A;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 4px) rotate(45deg);
+}
+
+.box .albert {
+  font-style: italic;
+  font-size: 20px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

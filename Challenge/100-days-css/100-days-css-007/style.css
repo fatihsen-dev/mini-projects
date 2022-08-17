@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .box {
+  width: 400px;
+  height: 400px;
+  background: #264057;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+body .box input[type="checkbox"] {
+  display: none;
+}
+
+body .box .main {
+  z-index: 1;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  transition: .3s;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+body .box .main .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5F98CD;
+  height: 60px;
+  color: #B2DAFF;
+  padding: 0 20px;
+  position: relative;
+}
+
+body .box .main .top span {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+}
+
+body .box .main .top .menu-btn {
+  transition: .5s;
+}
+
+body .box .main .top .menu-btn i {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+body .box .main .top .search-btn i {
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+body .box .main .top .search-bar {
+  position: absolute;
+  width: 230px;
+  height: 36px;
+  border-radius: 100px;
+  transform: translate(10px, 0);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  padding: 0 20px;
+  caret-color: gray;
+  font-size: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+body .box .main .top .search-bar::placeholder {
+  transform: translate(2px, 0);
+}
+
+body .box .main .top input[type="search"]::-webkit-search-decoration,
+body .box .main .top input[type="search"]::-webkit-search-cancel-button,
+body .box .main .top input[type="search"]::-webkit-search-results-button,
+body .box .main .top input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+body .box .main .top #search-btn:checked ~ .search-bar {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-6px, 0);
+}
+
+body .box .main .top #search-btn:checked ~ .menu-btn {
+  opacity: 0;
+}
+
+body .box .main .top #search-btn:checked ~ .span {
+  opacity: 0;
+}
+
+body .box .main .top .span {
+  transition: 1s;
+}
+
+body .box .main .bottom {
+  background: #fff;
+  flex: 1;
+}
+
+body .box .main .bottom ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+body .box .main .bottom ul li {
+  margin-left: 26px;
+  transition: .3s;
+}
+
+body .box .main .bottom ul li .time {
+  font-size: 11px;
+  color: #666;
+  position: relative;
+}
+
+body .box .main .bottom ul li .time::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #5F98CD;
+  transform: translate(-18px, 2px);
+  padding: 4px;
+  border-radius: 100%;
+}
+
+body .box .main .bottom ul li .text {
+  font-size: 15px;
+}
+
+body .box .main .bottom ul li .text span {
+  font-weight: bold;
+  color: #666;
+}
+
+body .box .main .bottom ul li:hover {
+  color: #5F98CD;
+}
+
+body .box .main .bottom ul li:hover .time {
+  color: #5F98CD;
+}
+
+body .box .main .bottom ul li:hover .text span {
+  color: #5F98CD;
+}
+
+body .box .menu {
+  position: absolute;
+  width: 200px;
+  height: 270px;
+  background: #43627D;
+  transform: translate(-10px, 0);
+  color: #B2DAFF;
+  border-radius: 3px;
+  z-index: 0;
+  transition: .3s;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+body .box .menu ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 0;
+}
+
+body .box .menu ul li {
+  display: flex;
+  padding-left: 16px;
+  flex: 1;
+  align-items: center;
+  transition: .3s;
+}
+
+body .box .menu ul li:hover {
+  color: #fff;
+  background: #385269;
+  cursor: pointer;
+}
+
+body .box .menu ul li i {
+  margin-right: 8px;
+}
+
+body .box #menu-btn:checked ~ .menu {
+  transform: translate(-50px, 0);
+}
+
+body .box #menu-btn:checked ~ .main {
+  transform: translate(150px, 0);
+}
+/*# sourceMappingURL=style.css.map */

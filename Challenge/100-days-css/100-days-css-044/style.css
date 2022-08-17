@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.box .items {
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid #888;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.box .item-1 {
+  width: 190.7px;
+  height: 190.7px;
+  z-index: 1;
+  border-color: #4a4a4a;
+  animation: item 3s ease-in-out 0.03333s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-2 {
+  width: 181.4px;
+  height: 181.4px;
+  z-index: 2;
+  border-color: #4e4e4e;
+  animation: item 3s ease-in-out 0.06667s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-3 {
+  width: 172.1px;
+  height: 172.1px;
+  z-index: 3;
+  border-color: #525252;
+  animation: item 3s ease-in-out 0.1s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-4 {
+  width: 162.8px;
+  height: 162.8px;
+  z-index: 4;
+  border-color: #565656;
+  animation: item 3s ease-in-out 0.13333s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-5 {
+  width: 153.5px;
+  height: 153.5px;
+  z-index: 5;
+  border-color: #5a5a5a;
+  animation: item 3s ease-in-out 0.16667s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-6 {
+  width: 144.2px;
+  height: 144.2px;
+  z-index: 6;
+  border-color: #5e5e5e;
+  animation: item 3s ease-in-out 0.2s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-7 {
+  width: 134.9px;
+  height: 134.9px;
+  z-index: 7;
+  border-color: #626262;
+  animation: item 3s ease-in-out 0.23333s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-8 {
+  width: 125.6px;
+  height: 125.6px;
+  z-index: 8;
+  border-color: #666666;
+  animation: item 3s ease-in-out 0.26667s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-9 {
+  width: 116.3px;
+  height: 116.3px;
+  z-index: 9;
+  border-color: #6a6a6a;
+  animation: item 3s ease-in-out 0.3s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-10 {
+  width: 107px;
+  height: 107px;
+  z-index: 10;
+  border-color: #6e6e6e;
+  animation: item 3s ease-in-out 0.33333s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-11 {
+  width: 97.7px;
+  height: 97.7px;
+  z-index: 11;
+  border-color: #727272;
+  animation: item 3s ease-in-out 0.36667s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-12 {
+  width: 88.4px;
+  height: 88.4px;
+  z-index: 12;
+  border-color: #767676;
+  animation: item 3s ease-in-out 0.4s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-13 {
+  width: 79.1px;
+  height: 79.1px;
+  z-index: 13;
+  border-color: #7a7a7a;
+  animation: item 3s ease-in-out 0.43333s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-14 {
+  width: 69.8px;
+  height: 69.8px;
+  z-index: 14;
+  border-color: #7e7e7e;
+  animation: item 3s ease-in-out 0.46667s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-15 {
+  width: 60.5px;
+  height: 60.5px;
+  z-index: 15;
+  border-color: #828282;
+  animation: item 3s ease-in-out 0.5s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-16 {
+  width: 51.2px;
+  height: 51.2px;
+  z-index: 16;
+  border-color: #868686;
+  animation: item 3s ease-in-out 0.53333s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-17 {
+  width: 41.9px;
+  height: 41.9px;
+  z-index: 17;
+  border-color: #8a8a8a;
+  animation: item 3s ease-in-out 0.56667s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-18 {
+  width: 32.6px;
+  height: 32.6px;
+  z-index: 18;
+  border-color: #8e8e8e;
+  animation: item 3s ease-in-out 0.6s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-19 {
+  width: 23.3px;
+  height: 23.3px;
+  z-index: 19;
+  border-color: #929292;
+  animation: item 3s ease-in-out 0.63333s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box .item-20 {
+  width: 14px;
+  height: 14px;
+  z-index: 20;
+  border-color: #969696;
+  animation: item 3s ease-in-out 0.66667s alternate infinite;
+}
+
+@keyframes item {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.box .c {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.1);
+  opacity: .3;
+}
+
+.box .c .i {
+  width: 4px;
+  height: 200px;
+  background: transparent;
+  margin: 1px;
+  position: absolute;
+  transform-origin: 50% 30%;
+  top: 90px;
+}
+
+.box .c .i.i-0 {
+  transform: rotate(0deg);
+}
+
+.box .c .i.i-1 {
+  transform: rotate(15deg);
+}
+
+.box .c .i.i-2 {
+  transform: rotate(30deg);
+}
+
+.box .c .i.i-3 {
+  transform: rotate(45deg);
+}
+
+.box .c .i.i-4 {
+  transform: rotate(60deg);
+}
+
+.box .c .i.i-5 {
+  transform: rotate(75deg);
+}
+
+.box .c .i.i-6 {
+  transform: rotate(90deg);
+}
+
+.box .c .i.i-7 {
+  transform: rotate(105deg);
+}
+
+.box .c .i.i-8 {
+  transform: rotate(120deg);
+}
+
+.box .c .i.i-9 {
+  transform: rotate(135deg);
+}
+
+.box .c .i.i-10 {
+  transform: rotate(150deg);
+}
+
+.box .c .i.i-11 {
+  transform: rotate(165deg);
+}
+
+.box .c .i.i-12 {
+  transform: rotate(180deg);
+}
+
+.box .c .i.i-13 {
+  transform: rotate(195deg);
+}
+
+.box .c .i.i-14 {
+  transform: rotate(210deg);
+}
+
+.box .c .i.i-15 {
+  transform: rotate(225deg);
+}
+
+.box .c .i.i-16 {
+  transform: rotate(240deg);
+}
+
+.box .c .i.i-17 {
+  transform: rotate(255deg);
+}
+
+.box .c .i.i-18 {
+  transform: rotate(270deg);
+}
+
+.box .c .i.i-19 {
+  transform: rotate(285deg);
+}
+
+.box .c .i.i-20 {
+  transform: rotate(300deg);
+}
+
+.box .c .i.i-21 {
+  transform: rotate(315deg);
+}
+
+.box .c .i.i-22 {
+  transform: rotate(330deg);
+}
+
+.box .c .i.i-23 {
+  transform: rotate(345deg);
+}
+
+.box .c .i.i-24 {
+  transform: rotate(360deg);
+}
+
+.box .c .i::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1px;
+  bottom: 0;
+}
+
+.box .c.c-0 {
+  animation: animate 9s linear infinite 0s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-1 {
+  animation: animate 9s linear infinite 0.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(0.3125) rotate(8deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-2 {
+  animation: animate 9s linear infinite 0.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(0.625) rotate(16deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-3 {
+  animation: animate 9s linear infinite 1s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(0.9375) rotate(24deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-4 {
+  animation: animate 9s linear infinite 1.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(1.25) rotate(32deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-5 {
+  animation: animate 9s linear infinite 1.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(1.5625) rotate(40deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-6 {
+  animation: animate 9s linear infinite 2s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(1.875) rotate(48deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-7 {
+  animation: animate 9s linear infinite 2.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(2.1875) rotate(56deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-8 {
+  animation: animate 9s linear infinite 2.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(2.5) rotate(64deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-9 {
+  animation: animate 9s linear infinite 3s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(2.8125) rotate(72deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-10 {
+  animation: animate 9s linear infinite 3.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(3.125) rotate(80deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-11 {
+  animation: animate 9s linear infinite 3.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(3.4375) rotate(88deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-12 {
+  animation: animate 9s linear infinite 4s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(3.75) rotate(96deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-13 {
+  animation: animate 9s linear infinite 4.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(4.0625) rotate(104deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-14 {
+  animation: animate 9s linear infinite 4.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(4.375) rotate(112deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-15 {
+  animation: animate 9s linear infinite 5s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(4.6875) rotate(120deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-16 {
+  animation: animate 9s linear infinite 5.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(5) rotate(128deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-17 {
+  animation: animate 9s linear infinite 5.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(5.3125) rotate(136deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-18 {
+  animation: animate 9s linear infinite 6s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(5.625) rotate(144deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-19 {
+  animation: animate 9s linear infinite 6.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(5.9375) rotate(152deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-20 {
+  animation: animate 9s linear infinite 6.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(6.25) rotate(160deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-21 {
+  animation: animate 9s linear infinite 7s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(6.5625) rotate(168deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-22 {
+  animation: animate 9s linear infinite 7.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(6.875) rotate(176deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-23 {
+  animation: animate 9s linear infinite 7.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(7.1875) rotate(184deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-24 {
+  animation: animate 9s linear infinite 8s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(7.5) rotate(192deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-25 {
+  animation: animate 9s linear infinite 8.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(7.8125) rotate(200deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-26 {
+  animation: animate 9s linear infinite 8.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(8.125) rotate(208deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-27 {
+  animation: animate 9s linear infinite 9s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(8.4375) rotate(216deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-28 {
+  animation: animate 9s linear infinite 9.33333s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(8.75) rotate(224deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-29 {
+  animation: animate 9s linear infinite 9.66667s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(9.0625) rotate(232deg);
+    opacity: 1;
+  }
+}
+
+.box .c.c-30 {
+  animation: animate 9s linear infinite 10s;
+}
+
+@keyframes animate {
+  to {
+    transform: scale(9.375) rotate(240deg);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

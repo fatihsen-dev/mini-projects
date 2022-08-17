@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 9;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #DDEEFC;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 600px;
+  height: 600px;
+  background: white;
+  position: relative;
+  margin-top: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input[type="number"],
+.form-container input[type="text"] {
+  transition: .2s;
+}
+
+.form-container input[type="number"]:focus,
+.form-container input[type="text"]:focus {
+  border: 2px solid #2364d2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input {
+  border: 2px solid #ccc;
+}
+
+.form-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  appearance: none;
+}
+
+.form-container .card-number-container,
+.form-container .card-holders-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.form-container .card-number-container input,
+.form-container .card-holders-container input {
+  height: 50px;
+  background: #fff;
+  border-radius: 6px;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: #333;
+  padding: 0 16px;
+}
+
+.form-container .card-number-container label, .form-container .card-number-container span,
+.form-container .card-holders-container label,
+.form-container .card-holders-container span {
+  font-size: 12px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.form-container .date-container {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  margin: 40px 0;
+  position: relative;
+}
+
+.form-container .date-container .month-container,
+.form-container .date-container .year-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.form-container .date-container .month-container select,
+.form-container .date-container .year-container select {
+  background: #fff;
+  border: 2px solid #ccc;
+  width: 150px;
+  height: 48px;
+  border-radius: 4px;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.form-container .date-container .month-container select:focus,
+.form-container .date-container .year-container select:focus {
+  border: 2px solid #2364d2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container .date-container .month-container span {
+  font-size: 13px;
+  color: #333;
+}
+
+.form-container .date-container .cw-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+
+.form-container .date-container .cw-container input {
+  background: #fff;
+  border: 2px solid #ccc;
+  padding: 10px 10px;
+  border-radius: 4px;
+  width: 150px;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-container .date-container .cw-container input:focus {
+  border: 2px solid #2364d2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container .date-container .cw-container input:focus + .card-container .card-front {
+  transform: perspective(1200px) rotateY(180deg);
+}
+
+.form-container .date-container .cw-container input:focus + .card-container .card-back {
+  transform: perspective(1200px) rotateY(360deg);
+}
+
+.form-container .date-container .cw-container label {
+  font-size: 13px;
+  color: #333;
+}
+
+.form-container .date-container .cw-container .card-container {
+  width: 450px;
+  height: 270px;
+  position: absolute;
+  transition: .8s;
+  border-radius: 20px;
+  top: -530px;
+  left: -330px;
+  user-select: none;
+}
+
+.form-container .date-container .cw-container .card-container .card-front,
+.form-container .date-container .cw-container .card-container .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-container .date-container .cw-container .card-container .card-front {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  transform: perspective(1200px) rotateY(0deg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  filter: brightness(70%);
+}
+
+.form-container .date-container .cw-container .card-container .card-front .logo {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+  padding: 0 26px;
+  align-items: center;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .logo img {
+  height: 100%;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .logo img:nth-of-type(2) {
+  height: 46px;
+}
+
+.form-container .date-container .cw-container .card-container .card-front input[type="radio"] {
+  display: none;
+}
+
+.form-container .date-container .cw-container .card-container .card-front input[type="radio"]:checked + label {
+  background: rgba(0, 0, 0, 0.3);
+  border: .1em solid #fff;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .card-number {
+  display: flex;
+  background: transparent;
+  border: .1em solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 46px;
+  margin: 30px 20px;
+  font-size: 25px;
+  word-spacing: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .full-name {
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-right: 10px;
+  padding: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: .1em solid transparent;
+  transition: .2s;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .full-name span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .full-name p {
+  font-size: 18px;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .month-year {
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: .1em solid transparent;
+  transition: .2s;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .month-year span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .month-year p {
+  font-size: 18px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back {
+  background-image: url(../images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: perspective(1200px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  filter: brightness(70%);
+}
+
+.form-container .date-container .cw-container .card-container .card-back .card-top {
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 36px;
+  margin-bottom: 10px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .cw-container-2 {
+  width: 94%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 13px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .cw-container-2 span {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 6px;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .cw-container-2 .cw-box {
+  width: 100%;
+  height: 46px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .logo {
+  display: flex;
+  width: 94%;
+  justify-content: flex-end;
+  margin: 0 14px;
+  margin-top: 30px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .logo img {
+  width: 80px;
+  margin-right: 4px;
+  opacity: .8;
+}
+
+.form-container .submit-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  background: #2364d2;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

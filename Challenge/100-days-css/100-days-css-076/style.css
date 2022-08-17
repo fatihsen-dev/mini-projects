@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+}
+
+.box .c {
+  width: 180px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
+  perspective: 800px;
+}
+
+.box .c .f {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform-origin: 0% 0%;
+  width: 100%;
+  height: 50px;
+  z-index: 22;
+}
+
+.box .c .f #i {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: 0;
+  background: #fff;
+  color: #222;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  backface-visibility: hidden;
+}
+
+.box .c .f .t {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  z-index: 1;
+  transform: rotateX(-180deg) translateY(-50px);
+  backface-visibility: hidden;
+  display: grid;
+  place-items: center;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.box .c .f:valid {
+  transform: rotateX(180deg) translateY(-50px);
+}
+
+.box .c .b {
+  width: 100%;
+  height: 50px;
+  background: #9fe03c;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

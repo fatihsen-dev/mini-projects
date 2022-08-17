@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 2px;
+  gap: 2px;
+}
+
+.box .dot {
+  width: 5%;
+  height: 5%;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.box .dot:hover {
+  background: #1d1d1d;
+}
+
+.box input[type="checkbox"] {
+  display: none;
+}
+
+.box input[type="checkbox"]:checked + label {
+  background: royalblue;
+}
+/*# sourceMappingURL=style.css.map */

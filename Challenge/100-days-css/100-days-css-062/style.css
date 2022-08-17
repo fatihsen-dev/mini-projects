@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 14px;
+}
+
+.box .plan {
+  width: 100px;
+  height: 160px;
+  background: #fff;
+  color: #222;
+  margin: 14px 12px 12px 12px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: 0.15s ease-in-out;
+  overflow: hidden;
+}
+
+.box .plan:hover {
+  transform: scale(1.05);
+}
+
+.box .plan.plan-1:hover .middle {
+  color: #cec8c8;
+}
+
+.box .plan.plan-1:hover ~ .stats > .user > .bar::before {
+  transform: translateX(-90%);
+  background: #cec8c8;
+}
+
+.box .plan.plan-1:hover ~ .stats > .gb > .bar::before {
+  transform: translateX(-80%);
+  background: #cec8c8;
+}
+
+.box .plan.plan-1:hover ~ .stats > .project > .bar::before {
+  transform: translateX(-95%);
+  background: #cec8c8;
+}
+
+.box .plan.plan-2:hover .middle {
+  color: gold;
+}
+
+.box .plan.plan-2:hover ~ .stats > .user > .bar::before {
+  transform: translateX(-60%);
+  background: gold;
+}
+
+.box .plan.plan-2:hover ~ .stats > .gb > .bar::before {
+  transform: translateX(-50%);
+  background: gold;
+}
+
+.box .plan.plan-2:hover ~ .stats > .project > .bar::before {
+  transform: translateX(-70%);
+  background: gold;
+}
+
+.box .plan.plan-3:hover .middle {
+  color: paleturquoise;
+}
+
+.box .plan.plan-3:hover ~ .stats > .user > .bar::before {
+  transform: translateX(0%);
+  background: paleturquoise;
+}
+
+.box .plan.plan-3:hover ~ .stats > .gb > .bar::before {
+  transform: translateX(0%);
+  background: paleturquoise;
+}
+
+.box .plan.plan-3:hover ~ .stats > .project > .bar::before {
+  transform: translateX(0%);
+  background: paleturquoise;
+}
+
+.box .plan .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.box .plan .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444;
+  transition: all .1s ease-in-out;
+}
+
+.box .plan .middle .text-1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.box .plan .middle .text-2 {
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.box .plan .bottom {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.box .plan .bottom .line {
+  border-radius: 1px;
+}
+
+.box .plan .bottom .line-1 {
+  min-width: 60px;
+  min-height: 3px;
+  background: #ccc;
+}
+
+.box .plan .bottom .line-2 {
+  min-width: 47px;
+  min-height: 2px;
+  background: #ccc;
+}
+
+.box .plan .bottom .line-3 {
+  min-width: 60px;
+  min-height: 3px;
+  background: #ccc;
+}
+
+.box .plan .bottom .line-4 {
+  min-width: 47px;
+  min-height: 2px;
+  background: #ccc;
+}
+
+.box .plan.plan-1 .top {
+  background: #f0eaea;
+}
+
+.box .plan.plan-2 .top {
+  background: gold;
+}
+
+.box .plan.plan-3 .top {
+  background: paleturquoise;
+}
+
+.box .stats {
+  width: 370px;
+  height: 160px;
+  background: #fff;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box .stats .user,
+.box .stats .gb,
+.box .stats .project {
+  padding: 10px;
+  width: 100%;
+}
+
+.box .stats .user .text,
+.box .stats .gb .text,
+.box .stats .project .text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: #444;
+  padding: 0 1px;
+  margin-bottom: 2px;
+}
+
+.box .stats .user .bar,
+.box .stats .gb .bar,
+.box .stats .project .bar {
+  width: 100%;
+  height: 14px;
+  border-radius: 4px;
+  background: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.box .stats .user .bar::before,
+.box .stats .gb .bar::before,
+.box .stats .project .bar::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #cec8c8;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

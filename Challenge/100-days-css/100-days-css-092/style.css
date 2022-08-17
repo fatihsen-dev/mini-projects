@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2px;
+}
+
+.box .b {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.box .b-1 {
+  animation: b-1 6s linear infinite;
+}
+
+.box .b-2 {
+  animation: b-2 6s linear infinite;
+}
+
+.box .b-3 {
+  animation: b-3 6s linear infinite;
+}
+
+.box .b-4 {
+  animation: b-4 6s linear infinite;
+}
+
+.box .b-5 {
+  animation: b-5 6s linear infinite;
+}
+
+.box .b-6 {
+  animation: b-6 6s linear infinite;
+}
+
+.box .b-7 {
+  animation: b-7 6s linear infinite;
+}
+
+.box .b-8 {
+  animation: b-8 6s linear infinite;
+}
+
+.box .b-9 {
+  animation: b-9 3.5s linear infinite;
+}
+
+.box .b-10 {
+  animation: b-10 3.5s linear infinite;
+}
+
+.box .b-11 {
+  animation: b-11 3.5s linear infinite;
+}
+
+.box .b-12 {
+  animation: b-12 3.5s linear infinite;
+}
+
+.box .b-13 {
+  animation: b-13 3.5s linear infinite;
+}
+
+.box .b-14 {
+  animation: b-14 3.5s linear infinite;
+}
+
+.box .b-15 {
+  animation: b-15 3.5s linear infinite;
+}
+
+.box .b-16 {
+  animation: b-16 3.5s linear infinite;
+}
+
+@keyframes b-1 {
+  0%,
+  100% {
+    transform: translate(-195px, -195px);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes b-2 {
+  0%,
+  100% {
+    transform: translate(195px, -195px);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes b-3 {
+  0%,
+  100% {
+    transform: translate(195px, 195px);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
+
+@keyframes b-4 {
+  0%,
+  100% {
+    transform: translate(-195px, 195px);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
+
+@keyframes b-5 {
+  0%,
+  100% {
+    transform: translate(-195px, -195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes b-6 {
+  0%,
+  100% {
+    transform: translate(195px, -195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes b-7 {
+  0%,
+  100% {
+    transform: translate(195px, 195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes b-8 {
+  0%,
+  100% {
+    transform: translate(-195px, 195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes b-9 {
+  0%,
+  100% {
+    transform: translate(0, -195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes b-10 {
+  0%,
+  100% {
+    transform: translate(0, 195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes b-11 {
+  0%,
+  100% {
+    transform: translate(0, -195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes b-12 {
+  0%,
+  100% {
+    transform: translate(0, 195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes b-13 {
+  0%,
+  100% {
+    transform: translate(195px, 0);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes b-14 {
+  0%,
+  100% {
+    transform: translate(-195px, 0);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes b-15 {
+  0%,
+  100% {
+    transform: translate(195px, 0);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
+
+@keyframes b-16 {
+  0%,
+  100% {
+    transform: translate(-195px, 0);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

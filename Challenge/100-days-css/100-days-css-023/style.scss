@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #e16d6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 100%;
+    transform: scale(1);
+    animation: circle 1s ease-in-out forwards;
+    position: absolute;
+
+    @keyframes circle {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(0);
+      }
+    }
+  }
+  .line-left {
+    height: 4px;
+    width: 150px;
+    position: absolute;
+    transform: translate(-75px, 0);
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 150px;
+      inset: 0;
+      background: #fff;
+      left: 100%;
+      animation: lineleft 1s ease-in-out forwards;
+      animation-delay: 1s;
+      @keyframes lineleft {
+        to {
+          left: -100%;
+        }
+      }
+    }
+  }
+  .line-right {
+    position: absolute;
+    height: 4px;
+    width: 150px;
+    transform: translate(75px, 0);
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 150px;
+      inset: 0;
+      background: #fff;
+      left: -100%;
+      animation: lineright 1s ease-in-out forwards;
+      animation-delay: 1s;
+      @keyframes lineright {
+        to {
+          left: 100%;
+        }
+      }
+    }
+  }
+  .left {
+    width: 4px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    left: 50px;
+    transform-origin: center;
+    transform: scaleY(0);
+    animation: rightleft 0.5s ease-in-out forwards;
+    animation-delay: 1.8s;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 4px;
+      background: #fff;
+      transform-origin: left;
+      transform: scaleX(0);
+      animation: beforeAfter 0.5s ease-in-out forwards;
+      animation-delay: 2.2s;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      top: 100%;
+    }
+  }
+  .right {
+    width: 4px;
+    height: 80px;
+    background: #fff;
+    right: 50px;
+    position: absolute;
+    transform-origin: center;
+    transform: scaleY(0);
+    animation: rightleft 0.5s ease-in-out forwards;
+    animation-delay: 1.8s;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 4px;
+      background: #fff;
+      right: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      animation: beforeAfter 0.5s ease-in-out forwards;
+      animation-delay: 2.2s;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      top: 100%;
+    }
+  }
+  .text {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+
+    .midle {
+      font-size: 50px;
+      font-weight: bold;
+      position: absolute;
+      opacity: 0;
+      animation: midle 0.8s ease-in-out forwards;
+      animation-delay: 1.8s;
+    }
+    .top {
+      font-size: 34px;
+      position: absolute;
+      top: -70px;
+      font-weight: 300;
+      transform: translate(-20px, 0);
+      opacity: 0;
+      animation: topbottom 0.6s ease-in-out forwards;
+      animation-delay: 2.4s;
+    }
+    .bottom {
+      font-size: 34px;
+      position: absolute;
+      width: 187px;
+      bottom: -74px;
+      font-weight: 300;
+      transform: translate(20px, 0);
+      opacity: 0;
+      animation: topbottom 0.6s ease-in-out forwards;
+      animation-delay: 2.4s;
+    }
+  }
+}
+@keyframes midle {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes topbottom {
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes beforeAfter {
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes rightleft {
+  to {
+    transform: scaleY(1);
+  }
+}
