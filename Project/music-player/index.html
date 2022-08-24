@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <audio src="" id="audio"></audio>
+      <div class="player">
+        <div class="popup-container">
+          <div class="popup">
+            <span id="track">Track name</span>
+            <div class="progres">
+              <span id="time">00:00</span>
+              <div class="progres-container">
+                <div id="progres"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="img">
+            <img src="" id="trackImg" alt="img" />
+            <div class="animation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="button">
+            <button class="prev-btn" id="prevBtn">
+              <ion-icon name="play-skip-back-outline"></ion-icon>
+            </button>
+            <button class="start-pause" id="playBtn">
+              <ion-icon class="active" name="play-outline"></ion-icon>
+              <ion-icon name="stop-outline"></ion-icon>
+            </button>
+            <button class="next-btn" id="nextBtn">
+              <ion-icon name="play-skip-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

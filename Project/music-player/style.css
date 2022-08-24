@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 240px;
+  justify-content: space-between;
+}
+h1 {
+  color: #e9ecef;
+  font-size: 34px;
+}
+.player {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  border-radius: 14px;
+}
+.buttons {
+  background-color: #343a40;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  z-index: 2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.popup-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+}
+.button {
+  display: flex;
+  flex: 2;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  background-color: #fff;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #ddd;
+}
+ion-icon {
+  position: absolute;
+  font-size: 24px;
+}
+.start-pause > ion-icon {
+  opacity: 0;
+}
+.start-pause > ion-icon.active {
+  opacity: 1;
+}
+.img {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  border-radius: 14px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.img > img {
+  width: 85%;
+  height: 85%;
+  border-radius: 8px;
+}
+.popup {
+  width: 320px;
+  height: 70px;
+  background-color: #495057;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 14px 14px 0 0;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.popup > #track {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+.popup > .progres {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 10px;
+}
+.progres > .progres-container {
+  height: 6px;
+  background-color: #fff;
+  transform: translateY(1px);
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progres-container > #progres {
+  height: 20px;
+  background-color: dodgerblue;
+}
+.animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.animation > span {
+  width: 6px;
+  height: 28px;
+  background-color: #fff;
+  animation: trackanimation 0.4s linear infinite alternate;
+  border-radius: 2px;
+  opacity: 0;
+}
+.animation > span:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+@keyframes trackanimation {
+  to {
+    height: 6px;
+  }
+  from {
+    height: 28px;
+  }
+}
